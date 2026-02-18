@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme{
+
+    /*color */
+    --color-dark-primary: #0B0404;
+    --color-background:#DFDFDF;
+ 
+    /*fonr */
+    --font-family-primary: praty;
+
+    /*screen*/
+    --breakpoint-xs:400px;
+}
+
+
+
+
+@utility test {
+    
+    border: 10px solid red  ;
+ 
+}
+
+@utility row {
+
+    @apply flex flex-row items-center ;
+}
+
+@utility color-icon {
+
+    color:var(color-dark-primary);
+}
