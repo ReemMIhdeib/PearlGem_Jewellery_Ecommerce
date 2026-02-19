@@ -3,18 +3,35 @@
 @theme{
 
     /*color */
-    --color-dark-primary: #0B0404;
-    --color-background:#DFDFDF;
+    /*-primary*/
+    --color-primary-50:#FBF6F5;
+    --color-primary-100:#F8EBEB;
+    --color-primary-200:#F1DADB;
+    --color-primary-300:#E5BCBD;
+    --color-primary-400:#D69699;;
+    --color-primary-500:#C37076;
+
+ 
+    --color-gray-250:#DFDFDF;
+    --color-gray-550:#A1A1A1;
+    --color-dark-primary: #0B0404;/*dark-500*/
+    --color-background:;
  
     /*fonr */
     --font-family-primary: praty;
+    
 
     /*screen*/
-    --breakpoint-xs:400px;
+    --breakpoint-xs:450px;
 }
 
 
-
+@layer base{
+    h3{
+        font-size: 24px;
+    }
+    
+}
 
 @utility test {
     
@@ -26,7 +43,10 @@
 
     @apply flex flex-row items-center ;
 }
+@utility stack {
 
+    @apply flex flex-col items-center justify-center;
+}
 @utility color-icon {
 
     color:var(color-dark-primary);
