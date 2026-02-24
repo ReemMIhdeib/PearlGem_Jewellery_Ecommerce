@@ -25,8 +25,11 @@
     --breakpoint-xs:450px;
 }
 
-
 @layer base{
+    h1{
+          font-size:72px;
+        font-weight: 520px;
+    }
     h2{
         font-size:36px;
         font-weight: 555px;
@@ -36,6 +39,7 @@
     }
     
 }
+
 
 @utility test {
     
