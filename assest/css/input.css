@@ -3,21 +3,26 @@
 @theme{
 
     /*color */
-    /*-primary*/
+    /*primary*/
     --color-primary-50:#FBF6F5;
     --color-primary-100:#F8EBEB;
     --color-primary-200:#F1DADB;
     --color-primary-300:#E5BCBD;
     --color-primary-400:#D69699;;
     --color-primary-500:#C37076;
+   
 
- 
+
+      /* gray */
+      --color-gray-150:#EDEDED;
     --color-gray-250:#DFDFDF;
+    --color-gray-450:#81858F;
     --color-gray-550:#A1A1A1;
     --color-dark-primary: #0B0404;/*dark-500*/
-    --color-background:;
+
+    --color-golden:#CCB26A; 
  
-    /*fonr */
+    /*font */
     --font-family-primary: praty;
     
 
@@ -39,7 +44,15 @@
     }
     
 }
+.imgg a img{
+    height: 300px;
+    
+}
 
+.imgg:hover .hoveer{
+   
+    display: grid;
+}
 
 @utility test {
     
