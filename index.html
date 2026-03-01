@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap" rel="stylesheet">
   <!--icon-->
   <!--fontawson-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -62,14 +60,14 @@
       </div>
    <!-- ----- Main Header ----- -->
       <div class="flex justify-between items-center py-1">
-        <div class="row  justify-center gap-4">
+        <div class="row  justify-center gap-2 sm:gap-4">
           <!-- visible on  mobile , lg Hidden on  for desktop -->
           <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
           <!--scale-x-[-1]" Horizontal flip "-->
              <!--logo-->
           <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
         </div>
-      <!-- Hidden on mobile, visible on lg for desktop  -->
+      <!-- Hidden on mobile, visible on lg   -->
        <nav>
         <ul class=" hidden lg:row gap-8 uppercase ">
           <li> <a href=""> RINgS</a></li>
@@ -80,9 +78,9 @@
 
         </ul>
         </nav>
-        <ul class="row justify-between  gap-6">
+        <ul class="  row justify-between gap-1 sm:gap-6">
           <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
-          <li class="hidden xs:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
+          <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
           <li class="hidden lg:block"><a href=""><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
           <li> <a href=""> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
         </ul>
@@ -102,7 +100,7 @@
           <div >
             <h1 class=" hidden lg:stack">Unveiling the Beauty <span >
               of Fine Jewelry </span> </h1>
-               <h1 class=" text-5xl lg:hidden">Unveiling the 
+               <h1 class=" text-4xl sm:text-5xl lg:hidden">Unveiling the 
                 <span> Beauty of  </span>
                 <span >
                Fine Jewelry </span> </h1>
@@ -194,12 +192,12 @@
      
     </section>
 
-      <section class="Shop-By-Shape py-20">
+      <section class="Shop-By-Shape lg:py-20">
      <div class="container mx-auto px-8">
       <!-- Lg: show all shapes side by side -->
-     <div class=" hidden  lg:stack gap-12 ">
+     <div class=" stack gap-8 lg:gap-12 ">
       <h2 class="text-3xl md:text-4xl">Shop By Shape</h2>
-      <div class="row justify-between">
+      <div class="hidden  lg:row justify-between">
            <figure class="stack gap-2 items-center ">
           <img src="./assest/img/home/shape/Round.svg" alt="Round">
           <figcaption> Round</figcaption>
@@ -399,11 +397,11 @@
        </div>
       </section>
 
-      <section class="Bestseller-Products  py-20">
+      <section class="Bestseller-Products py-8 lg:py-20">
         <div class="container mx-auto px-8 ">
-          <div class="row justify-between pb-12">
+          <div class="stack  items-start gap-2 lg:row justify-between pb-12">
            <h2> Bestseller Products </h2>
-            <button class="border-0 border-b  text-primary-500 justify-start "> VIEW ALL <span class="text-[18px]" >    <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i> </span></button>
+            <button class="border-0 border-b  text-primary-500 tracking-[3px]  "> VIEW ALL <span class="text-[18px]" >    <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i> </span></button>
             </div>
            <div class="products grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div class="product">
@@ -730,8 +728,8 @@
         
            </div>
 
-             <!-- sm & md screens: carousel for product مش جاهز  -->
-    <div id="default-carousel" class="relative w-full hidden " data-carousel="slide">
+             <!-- sm & md screens: carousel for product ??!!مش جاهز  -->
+    <div id="default-carousel" class="relative w-full hidden" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-base md:h-96">
          <!-- Item 1 -->

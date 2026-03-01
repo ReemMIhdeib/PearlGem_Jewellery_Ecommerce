@@ -24,7 +24,7 @@
     --color-golden:#CCB26A; 
  
     /*font */
-    --font-family-primary: praty;
+    --font-family-primary: prata;
     
 
     /*screen*/
@@ -34,11 +34,11 @@
 @layer base{
     h1{
           font-size:72px;
-        font-weight: 520px;
+        font-weight: 520;
     }
     h2{
         font-size:36px;
-        font-weight: 555px;
+        font-weight: 555;
     }
     h3{
         font-size: 24px;
@@ -47,7 +47,7 @@
     
     
 }
-.imgg a img{
+.imgg  a img{
     height: 300px;
     
 }
@@ -56,6 +56,7 @@
    
     display: grid;
 }
+
 
 @utility test {
     
