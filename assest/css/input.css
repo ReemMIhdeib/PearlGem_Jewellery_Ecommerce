@@ -31,6 +31,7 @@
     --breakpoint-xs:450px;
 }
 
+
 @layer base{
     h1{
           font-size:72px;
@@ -61,7 +62,11 @@
     display: grid;
 }
 
-
+@utility ttt{
+height: 288px;
+   background-image: url(./../img/home/gold-ring-with-diamonds1.webp);
+   
+}
 @utility test {
     
     border: 10px solid red  ;
