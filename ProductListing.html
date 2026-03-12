@@ -1,0 +1,505 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap" rel="stylesheet">
+  <!--icon-->
+  <!--fontawson-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--hugeicons-->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+ 
+
+  <!--lab-->
+ <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!--css-->
+  <link rel="stylesheet" href=".\assest\css\output.css">
+  
+  <!--npm run build:css-->
+
+  <title>Product Listing</title>
+</head>
+
+<body class="font-family-primary bg-white text-dark-primary">
+
+  <!-- -----header----- -->
+  <header class=" text-center  ">
+
+    <div class="container mx-auto px-8 ">
+      <!-- Hidden on mobile, visible on lg for desktop  -->
+      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-1 ">
+        <div class=" row gap-2">
+          <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i>
+          <p class="text-base  text-gray-750"> (307) 555-0133</p>
+        </div>
+
+
+        <p class="text-dark-primary">Get 50% OFF on Engagement Rings</p>
+
+
+        <div class="row gap-4">
+          <div class="row gap-1">
+            <p>EN</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+          <div class="row gap-1">
+            <p>USD</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+        </div>
+      </div>
+   <!-- ----- Main Header ----- -->
+      <div class="flex justify-between items-center py-1">
+        <div class="row  justify-center gap-2 sm:gap-4">
+          <!-- visible on  mobile , lg Hidden on  for desktop -->
+          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
+          <!--scale-x-[-1]" Horizontal flip "-->
+             <!--logo-->
+         <a href="index.html"> <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem"></a>
+        </div>
+      <!-- Hidden on mobile, visible on lg   -->
+       <nav>
+        <ul class=" hidden lg:row gap-8 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> EARRINGS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> PENDENTS</a></li>
+          <li> <a href=""> NECKLACES</a></li>
+
+        </ul>
+        </nav>
+        <ul class="  row justify-between gap-1 sm:gap-6">
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
+          <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
+          <li class="hidden lg:block"><a href=""><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </header>
+
+<main>
+    <section>
+        <div class="container mx-auto px-8 stack">
+          <div class="row gap-8"></div>
+            <!-- tracking-tighter--  space between letters-->
+            <div class="row items-start gap-1 uppercase text-[14px]   py-8">
+            <a href="index.html" class="tracking-[.5px] "> Home</a>
+            <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
+            <a href=""class="tracking-[.5px] "> Shop</a>
+            </div>
+            <div class="grid grid-cols-[1fr_4fr] gap-12">
+            <!-- FILTER-->
+            <div class=" filter hidden lg:stack  gap-8 " >
+                <!-- Categories-->
+                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                    <div class="row justify-between "> <!-- title-->
+                    <h3 class="text-[18px] font-bold tracking-[.35px]">
+                        Categories
+                    </h3>
+                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
+                    </div>
+                    <ul class="stack gap-4 ">
+                   <li>
+                    <label for="EngagementRings" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="EngagementRings" name="Engagement Rings">
+                    <span >Engagement Rings</span>
+                    </div>
+                    <span  class="text-gray-550">(120)</span>
+                  </label>
+                  </li>
+                  <li>
+                     <label for="Rings" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="Rings" name="Rings">
+                    <span >Rings</span>
+                    </div>
+                    <span class="text-gray-550">(240)</span>
+                  </label>
+                  </li>
+                  <li>
+                    <label for="Necklaces" class=" row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="Necklaces" name="Necklaces">
+                    <span >Necklaces</span>
+                    </div>
+                    <span class="text-gray-550">(175)</span>
+                    </label>
+                  </li>
+                  <li >
+                    <label for="Bracelets" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="Bracelets" name="Bracelets">
+                    <span >Bracelets</span>
+                    </div>
+                    <span class="text-gray-550">(120)</span>
+                    </label>
+                  </li>
+                   <li>
+                   <label  for="Earrings" class="row justify-between text-base cursor-pointer pb-4">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="Earrings" name="Earrings">
+                    <span>Earrings</span>
+                    </div>
+                    <span class="text-gray-550">(90)</span>
+                   </label>
+                  </li>
+
+                  </ul>
+                </div>
+                 <!--Ring by Diamond-->
+                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                    <div class="row justify-between "> <!-- title-->
+                    <h3 class="text-[18px] font-bold tracking-[.35px]">
+                        Ring by Diamond
+                    </h3>
+                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
+                    </div>
+                    <ul class="stack gap-4 ">
+                  <li >
+                    <input type="checkbox" id="Round" name="Round" class="hidden">
+                    <label for="Round" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Round.svg" alt="Round" class="w-6 h-6">
+                        <span>Round</span>
+                        </div>
+                         <span class="text-gray-550">(80)</span>
+                    </label>         
+                  </li>
+                   <li >
+                    <input type="checkbox" id="Princess" name="Princess" class="hidden">
+                    <label for="Princess" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Princess.svg" alt="Princess" class="w-6 h-6">
+                        <span>Princess</span>
+                        </div>
+                         <span class="text-gray-550">(45)</span>
+                    </label>         
+                  </li>
+                  <li >
+                    <input type="checkbox" id="Emerald" name="Emerald" class="hidden">
+                    <label for="Emerald" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Emerald.svg" alt="Emerald" class="w-6 h-6">
+                        <span>Emerald</span>
+                        </div>
+                         <span class="text-gray-550">(35)</span>
+                    </label>         
+                  </li>
+                  <li >
+                    <input type="checkbox" id="Pear" name="Pear" class="hidden">
+                    <label for="Pear" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Pear.svg" alt="Pear" class="w-6 h-6">
+                        <span>Pear</span>
+                        </div>
+                         <span class="text-gray-550">(20)</span>
+                    </label>         
+                  </li>
+                  <li >
+                    <input type="checkbox" id="Cushion" name="Cushion" class="hidden">
+                    <label for="Cushion" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Cushion.svg" alt="Cushion" class="w-6 h-6">
+                        <span>Cushion</span>
+                        </div>
+                         <span class="text-gray-550">(60)</span>
+                    </label>         
+                  </li>
+                   <li class="pb-4">
+                    <input type="checkbox" id="Oval" name="Oval" class="hidden">
+                    <label for="Oval" class="row justify-between text-base cursor-pointer">
+                         <div class="row gap-2">
+                        <img src="./assest/img/home/shape/Oval.svg" alt="Oval" class="w-6 h-6">
+                        <span>Oval</span>
+                        </div>
+                         <span class="text-gray-550">(90)</span>
+                    </label>         
+                  </li>
+                  </ul>
+                </div>
+                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                    <div class="row justify-between "> <!-- title-->
+                    <h3 class="text-[18px] font-bold tracking-[.35px]">
+                       Price Range
+                    </h3>
+                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
+                    </div>
+                    
+                    <div>
+                      
+                        <label for="default-range" class="block mb-2.5 text-base font-medium text-heading">Price: $0 - $2000</label>
+                        <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 bg-primary-500  text-primary-500 rounded-full  cursor-pointer">
+                    </div>
+                 </div>  
+                 <!-- Size-->
+                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                    <div class="row justify-between "> <!-- title-->
+                    <h3 class="text-[18px] font-bold tracking-[.35px]">
+                        Size
+                    </h3>
+                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
+                    </div>
+                    <ul class="stack gap-4 ">
+                   <li>
+                    <label for="size-4-0" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-4-0" name="size-4-0">
+                    <span >4.0</span>
+                    </div>
+                    <span  class="text-gray-550">(120)</span>
+                  </label>
+                  </li>
+                  <li>
+                     <label for="size-4-5" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-4-5" name="size-4-5">
+                    <span >4.5</span>
+                    </div>
+                    <span class="text-gray-550">(240)</span>
+                  </label>
+                  </li>
+                  <li>
+                    <label for="size-5-0" class=" row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-5-0" name="size-5-0">
+                    <span >5.0</span>
+                    </div>
+                    <span class="text-gray-550">(175)</span>
+                    </label>
+                  </li>
+                  <li >
+                    <label for="size-6-0" class="row justify-between text-base cursor-pointer">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-6-0" name="size-6-0">
+                    <span >6.0</span>
+                    </div>
+                    <span class="text-gray-550">(120)</span>
+                    </label>
+                  </li>
+                   <li>
+                   <label  for="size-6-5" class="row justify-between text-base cursor-pointer ">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-6-5" name="size-6-5">
+                    <span>6.5</span>
+                    </div>
+                    <span class="text-gray-550">(90)</span>
+                   </label>
+                  </li>
+                   <li>
+                   <label  for="size-7-0" class="row justify-between text-base cursor-pointer ">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-7-0" name="size-7-0">
+                    <span>7.0</span>
+                    </div>
+                    <span class="text-gray-550">(85)</span>
+                   </label>
+                  </li>
+                  <li>
+                   <label  for="size-7-5" class="row justify-between text-base cursor-pointer ">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-7-5" name="size-7-5">
+                    <span>7.5</span>
+                    </div>
+                    <span class="text-gray-550">(50)</span>
+                   </label>
+                  </li>
+                  <li>
+                   <label  for="size-8-0" class="row justify-between text-base cursor-pointer pb-4">
+                    <div class="row gap-2">
+                    <input type="checkbox" id="size-8-0" name="size-8-0">
+                    <span>8.0</span>
+                    </div>
+                    <span class="text-gray-550">(35)</span>
+                   </label>
+                  </li>
+                  </ul>
+                </div>
+                 
+            </div>
+            <div class="grid grid-cols-3 gap-8"></div>
+            </div>
+        </div>
+    </section>
+</main>
+  
+<!-- ----- FOOTER ----- -->
+  <footer>
+    
+      <div class=" py-12 text-white bg-primary-500 ">
+        <!-- Grid → 1 col mobile / 2 md / row lg -->
+       <div class="container mx-auto px-8 grid grid-cols-1 gap-5 md:grid-cols-2  lg:grid-cols-4  lg:row justify-between  ">
+        <div class="row justify-center  gap-4 ">
+
+          <i class="hgi hgi-stroke hgi-delivery-box-01 text-white"></i>
+          <div>
+            <h3 class="font-medium">
+              Free Shipping
+            </h3>
+            <p class="text-sm font-light">
+              You will love at great low prices
+            </p>
+          </div>
+        </div>
+        <div class="row justify-center  gap-4 ">
+          <i class="hgi hgi-stroke hgi-delivery-return-01"></i>
+          <div>
+            <h3 class="font-medium">
+              15 Days Returns
+            </h3>
+            <p class="text-sm font-light">
+              Within 15 days for an exchange
+            </p>
+          </div>
+        </div>
+        <div class=" row justify-center gap-4 ">
+
+          <i class="hgi hgi-stroke hgi-time-03"></i>
+       
+          <div>
+            <h3 class="font-medium">
+              Customer Support
+            </h3>
+            <p class="text-sm font-light">
+              24 hours a day, 7 days a week
+            </p>
+          </div>
+        </div>
+        <div class="row justify-center gap-4  ">
+          <i class="hgi hgi-stroke hgi-master-card"></i>
+          <div>
+            <h3 class="font-medium">
+              Flexible Payment
+
+            </h3>
+            <p class="text-sm font-light">
+              Pay with multiple credit cards
+            </p>
+          </div>
+        </div>
+      </div>
+     </div>
+      <!-- ------Contact + Newsletter------ -->
+      <div class="py-10 border-b border-b-gray-250 ">
+        <div class="container mx-auto px-8 stack gap-5 place-items-center lg:row lg:justify-between  ">
+         <!-- Contact-->
+          <div class="stack gap-2 ">
+          <h4 class="text-lg text-dark-primary">
+            CONTACT US
+          </h4>
+          <p class="text-gray-550 font-light"> (405) 555-0128 </p>
+        </div>
+         <!-- Newsletter -->
+        <div class="stack gap-10  border-y   py-8 border-y-gray-250 lg:border-y-0 lg:border-x border-x-gray-250 lg:px-8 ">
+        <div class="stack gap-2">
+          <h2 class="   text-3xl md:text-4xl  ">
+            Let’s Get In Touch!
+          </h2>
+          <p class="text-base text-gray-550"> What' s inside? Exclusive sales, new arrivals & much more.</p>
+          </div>
+          <div>
+            <Form class="flex gap-0 items-stretch  ">
+                  <!-- items-stretch → يخلي input + button نفس الارتفاع -->
+              <input type="email" placeholder="   Email Address" class="  border border-gray-250 xs:pr-13 md:pr-24">
+            
+              <button class="text-sm  border border-gray-250 text-white bg-primary-500   py-3 px-6 ">
+                SIGN UP
+              </button>
+       
+
+            </Form>
+           
+          </div>
+        </div>
+        <!---- SOCIAL ---->
+        <div class="stack gap-2">
+          <h4 class=" text-lg text-dark-primary">
+            SOCIAL NETWORKS
+          </h4>
+          <nav>
+          <ul class="row justify-between  gap-6">
+               <li><a href=""> <i class=" fa-brands fa-facebook"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+          </nav>
+        </div>
+        </div>
+        </div>
+         <!--  Footer Navigation -->
+      <div class=" py-8 text-base text-dark-primary   ">
+       <div class="container mx-auto px-8   ">
+        <div class= " grid grid-cols-1 gap-8 place-items-center  lg:row justify-between">
+        <ul class="  flex flex-wrap  justify-center   gap-6 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> about us</a></li>
+          <li> <a href=""> CONTACT US</a></li>
+
+        </ul>
+
+        <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+
+        <ul class="  row gap-6 uppercase ">
+          <li> <a href=""> TERMS & CONDITIONS</a></li>
+          <li> <a href=""> PRIVACY POLICY</a></li>
+        </ul>
+          </div>
+      </div>
+     </div>
+      <div class=" py-4  bg-primary-500 text-white ">
+        <div class="container mx-auto px-8 ">
+           <!-- Copyright  -->
+          <div class=" stack gap-4 place-items-center md:row justify-between">
+        <p>Copyright © 2025 PearlGem. All Rights Reserved.</p>
+         <!-- Payment methods -->
+        <ul class="  row gap-4 uppercase ">
+          <li> <img src="./assest/img/footer/klarna.png" alt="klarna"></li>
+          <li> <img src="./assest/img/footer/Visa.png" alt="Visa"></li>
+          <li> <img src="./assest/img/footer/PayPal.png" alt="PayPal"></li>
+          <li> <img src="./assest/img/footer/Amex.png" alt="Amex"></li>
+          <li> <img src="./assest/img/footer/Discover.png" alt="Discover"></li>
+          <li> <img src="./assest/img/footer/Mastercard.png" alt="Mastercard"></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
