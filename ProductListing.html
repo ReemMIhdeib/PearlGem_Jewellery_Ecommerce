@@ -50,7 +50,7 @@
 
     <div class="container mx-auto px-8 ">
       <!-- Hidden on mobile, visible on lg for desktop  -->
-      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-1 ">
+      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-2 ">
         <div class=" row gap-2">
           <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i>
           <p class="text-base  text-gray-750"> (307) 555-0133</p>
@@ -74,7 +74,7 @@
         </div>
       </div>
    <!-- ----- Main Header ----- -->
-      <div class="flex justify-between items-center py-1">
+      <div class="flex justify-between items-center py-6">
         <div class="row  justify-center gap-2 sm:gap-4">
           <!-- visible on  mobile , lg Hidden on  for desktop -->
           <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
@@ -106,18 +106,19 @@
   </header>
 
 <main>
-    <section>
+    <section class="pb-20">
         <div class="container mx-auto px-8 stack">
-          <div class="row gap-8"></div>
+          <div class="stack gap-8 ">
             <!-- tracking-tighter--  space between letters-->
-            <div class="row items-start gap-1 uppercase text-[14px]   py-8">
+            <div class="row items-start gap-1 uppercase text-[14px]  pt-8">
             <a href="index.html" class="tracking-[.5px] "> Home</a>
             <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
             <a href=""class="tracking-[.5px] "> Shop</a>
             </div>
-            <div class="grid grid-cols-[1fr_4fr] gap-12">
+            <div class=" lg:grid grid-cols-[1fr_4fr] gap-12 items-start">
             <!-- FILTER-->
-            <div class=" filter hidden lg:stack  gap-8 " >
+             <!--تعديل شكل ال slider ، اسال المشرف عنها -->
+            <div class=" filter hidden lg:stack gap-8 " >
                 <!-- Categories-->
                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
@@ -345,8 +346,529 @@
                 </div>
                  
             </div>
-            <div class="grid grid-cols-3 gap-8"></div>
+            <div class="stack gap-12">
+             <div class="stack gap-6">
+              <div class=" stack gap-4 md:row justify-between">
+                 <div class="row gap-4">
+                 <i class="hgi hgi-stroke hgi-grid-view "></i>
+                  <button class="bg-primary-500 w-12 h-12 cursor-pointer">
+                       <i class="hgi hgi-stroke hgi-left-to-right-list-triangle  text-white"></i>
+                  </button>
+                   <span class="text-[15px] xs:text-base">Showing 1–10 of 60 results</span>
+                 </div>
+                 <div class="row gap-4">
+                  <button class="bg-primary-500 w-32 h-12 text-white row gap-2 justify-center cursor-pointer">
+                   <i  class="hgi hgi-stroke hgi-filter-horizontal "></i>
+                   <span class="uppercase tracking-[.25] ">Filter </span> 
+
+                  </button>
+                   <button class=" w-61 h-12 border border-gray-250 row gap-2 justify-center cursor-pointer">
+                   
+                   <span class="uppercase tracking-[.25]">SORT BY POPULARITY </span>
+                   <i class="hgi hgi-stroke hgi-arrow-down-01"></i> 
+
+                  </button>
+                 </div>
+
+              </div>
+           <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/gold-earrings-with-reflection-white-background (1).svg" alt="Gold Prestige Intertwined Earrings" class="place-self-center">
+                 </a>
+                  <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Gold Prestige Intertwined Earrings </h3>
+                  </a>
+               
+                   <div>
+                  <span class="text-base text-primary-500 ">$120.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$130.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+              </div>
+               <div class="product">
+              <div class="h-80 relative group bg-gray-150  ">
+                 <a href="" class="m-auto">
+                  <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
+                 </a>
+                   <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Rose Gold Diamond Ring</h3>
+                  </a>
+               
+                   <div>
+                  <span class="text-base text-primary-500 ">$280.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$300.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
             </div>
+             <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/silver-gilded-earrings-with-zircon-white-background 1.svg" alt="Gold Pigeon Blood Earrings" class="place-self-center">
+                 </a>
+                   <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Gold Pigeon Blood Earrings </h3>
+                  </a>
+                
+                   <div>
+                  <span class="text-base text-primary-500 ">$180.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$220.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+             <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center">
+                 </a>
+                   <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Rose Gold Lotus Necklace</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$200.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$220.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class="h-80 relative group bg-gray-150  ">
+                 <a href="">
+                  <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
+                 </a>
+                   <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Diamond Engagement Ring </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$240.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$250.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
+                 </a>
+                 <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Prestige Diamond Earrings </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$140.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$150.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class=" h-80 relative group bg-gray-150 flex items-center justify-center ">
+                 <a href="">
+                  <img src="./assest/img/product/diamond-engagement-ring.svg" alt="diamond engagement ring" >
+                 </a>
+                
+                  <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Solitaire Diamond Engagement Ring </h3>
+                  </a>
+          
+                   <div>
+                  <span class="text-base text-primary-500 ">$230.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$250.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class=" h-80 relative group bg-gray-150 flex items-end justify-center ">
+                 <a href="">
+                  <img src="./assest/img/product/Gold Diamond Rings.svg" alt="Gold Diamond Rings" class="w-fit place-self-center">
+                 </a>
+                
+                  <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Gold Diamond Rings </h3>
+                  </a>
+          
+                   <div>
+                  <span class="text-base text-primary-500 ">$250.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$280.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center">
+                 </a>
+                <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Diamond Pearl Engagement Ring</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$160.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$170.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+             <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Diamond Lotus Short Necklace.svg" alt="Diamond Lotus Short Necklace "class="place-self-center">
+                 </a>
+                <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Diamond Lotus Short Necklace</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$150.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$180.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+
+         <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Rose Gold Diamond Earrings.svg" alt="Rose Gold Diamond Earrings "class="place-self-center">
+                 </a>
+                <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Rose Gold Diamond Earrings</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$160.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$180.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+        <div class="product">
+              <div class="h-80 relative group bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Gold Earrings With Zircon.svg" alt="Gold Earrings With Zircon "class="place-self-center">
+                 </a>
+                <div class=" absolute  bottom-2 left-2 grid grid-cols-6 gap-8 opacity-0 group-hover:opacity-100">
+                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
+                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+                    </button>
+                    
+                    <button class="bg-primary-500 h-12 text-white col-span-5 mr-2 uppercase text-base ">
+                            ADd to cart
+                    </button>
+              
+                  </div>
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Gold Earrings With Zircon</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$250.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$280.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+        
+      
+            </div>
+            </div>
+            <div>
+              <ul class="row items-center justify-center gap-8 py-2">
+                <li class="font-medium text-[15px] xs:text-[16px] border-b border-b-gray-250 tex"> <a href="" > PREV
+                <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i>
+                </a></li>
+            
+              <div class="row items-center justify-center gap-2">
+                <li class="font-medium text-base "> <a href="" class="hover:text-primary-500 active:text-dark-primary "> 
+                 01
+                </a></li>
+              <li class="font-medium text-base text-gray-450 "> <a href="" class="hover:text-primary-500 active:text-dark-primary"> 
+                 02
+                </a></li>
+                  <li class="font-medium text-base text-gray-450 "> <a href="" class="hover:text-primary-500 active:text-dark-primary"> 
+                 03
+                </a></li>
+                </div>
+                 <li class="text-[15px] font-medium xs:text-base border-b border-b-primary-500"> <a href="" class="text-primary-500"> NEXT
+                <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i>
+                </a></li>
+                
+              </ul>
+
+            </div>
+            </div>
+            </div>
+        </div>
         </div>
     </section>
 </main>
