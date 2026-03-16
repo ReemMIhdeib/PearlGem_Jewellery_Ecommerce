@@ -27,7 +27,7 @@
   
   <!--npm run build:css-->
 
-  <title>Product Listing</title>
+  <title>Product Listing Filter</title>
 </head>
 
 <body class="font-family-primary bg-white text-dark-primary">
@@ -336,20 +336,18 @@
             <div class="stack gap-12">
              <div class="stack gap-6">
               <div class=" stack gap-4 md:row justify-between">
-                 <div class="row gap-4"> 
-                 
-                  <button class="bg-primary-500 w-12 h-12 cursor-pointer">
-                    <i class="hgi hgi-stroke hgi-grid-view text-white"></i>
-                     
-                  </button>
-                  <a href="Product Listing Filter.html" class="cursor-pointer">
-                   <i class="hgi hgi-stroke hgi-left-to-right-list-triangle  "></i>
+                 <div class="row gap-4">
+                  <a href="ProductListing.html" class="cursor-pointer">
+                 <i class="hgi hgi-stroke hgi-grid-view "></i>
                  </a>
+                  <button class="bg-primary-500 w-12 h-12 cursor-pointer">
+                       <i class="hgi hgi-stroke hgi-left-to-right-list-triangle  text-white"></i>
+                  </button>
                    <span class="text-[15px] xs:text-base">Showing 1–10 of 60 results</span>
                  </div>
                  <div class="row gap-4">
                   <a href="Product Listing Filter.html" class="bg-primary-500 w-32 h-12 text-white row gap-2 justify-center cursor-pointer">
-                     <i  class="hgi hgi-stroke hgi-filter-horizontal "></i>
+                   <i  class="hgi hgi-stroke hgi-filter-horizontal "></i>
                    <span class="uppercase tracking-[.25] ">Filter </span> 
 
                   </a>
@@ -362,25 +360,14 @@
                  </div>
 
               </div>
-           <div class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="product">
-              <div class="h-80  bg-gray-150 relative group">
-                 <a href="">
+               <div class="products grid grid-cols-1  gap-8">
+                  <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   <img src="./assest/img/product/gold-earrings-with-reflection-white-background (1).svg" alt="Gold Prestige Intertwined Earrings" class="place-self-center">
                  </a>
-                  <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
-                    </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
-                            ADd to cart
-                    </button>
-              
-                  </div>
-
-
-                </div>
+       
+                <div class="stack gap-6 xs:justify-between ">
                  <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Gold Prestige Intertwined Earrings </h3>
@@ -402,25 +389,37 @@
                   </div>
 
                  </div>
-              </div>
-               <div class="product">
-              <div class="h-80 relative group bg-gray-150  ">
-                 <a href="" class="m-auto">
-                  <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
-                 </a>
-                    <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                 <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
 
-                </div>
-                 <div>
+                  
+                  </div>
+                  </div>
+
+                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
+                 </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+                   <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Rose Gold Diamond Ring</h3>
                   </a>
@@ -441,24 +440,37 @@
                   </div>
 
                  </div>
-            </div>
-             <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/silver-gilded-earrings-with-zircon-white-background 1.svg" alt="Gold Pigeon Blood Earrings" class="place-self-center">
-                 </a>
-                  <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                   <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
-                </div>
-                 <div>
+                  </div>
+                  </div>
+
+                  <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/silver-gilded-earrings-with-zircon-white-background 1.svg" alt="Gold Pigeon Blood Earrings" class="place-self-center">
+                
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+               <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Gold Pigeon Blood Earrings </h3>
                   </a>
@@ -479,25 +491,38 @@
                   </div>
 
                  </div>
-            </div>
-             <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center">
-                 </a>
-                   <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
 
-                </div>
-                 <div>
+                  
+                  </div>
+                  </div>
+
+                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center mt-8">
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+                <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Rose Gold Lotus Necklace</h3>
                   </a>
@@ -518,25 +543,38 @@
                   </div>
 
                  </div>
-            </div>
-            <div class="product">
-              <div class="h-80 relative group bg-gray-150  ">
-                 <a href="">
-                  <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
-                 </a>
-                    <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
 
-                </div>
-                 <div>
+                  
+                  </div>
+                  </div>
+
+                  <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+               <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary ">Diamond Engagement Ring </h3>
                   </a>
@@ -557,24 +595,38 @@
                   </div>
 
                  </div>
-            </div>
-            <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
-                 </a>
-                  <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
-                </div>
-                 <div>
+
+                  
+                  </div>
+                  </div>
+
+                    <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+                <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Prestige Diamond Earrings </h3>
                   </a>
@@ -595,26 +647,39 @@
                   </div>
 
                  </div>
-            </div>
-            <div class="product">
-              <div class=" h-80 relative group bg-gray-150 flex items-center justify-center ">
-                 <a href="">
-                  <img src="./assest/img/product/diamond-engagement-ring.svg" alt="diamond engagement ring"  >
-                 </a>
-                
-                   <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
 
-                </div>
-                 <div>
+                  
+                  </div>
+                  </div>
+
+                  
+                    <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/diamond-engagement-ring.svg" alt="diamond engagement ring"  >
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+                <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Solitaire Diamond Engagement Ring </h3>
                   </a>
@@ -635,26 +700,38 @@
                   </div>
 
                  </div>
-            </div>
-            <div class="product">
-              <div class=" h-80 relative group bg-gray-150 flex items-end justify-center ">
-                 <a href="">
-                  <img src="./assest/img/product/Gold Diamond Rings.svg" alt="Gold Diamond Rings" class="w-fit place-self-center">
-                 </a>
-                
-                  <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
 
-                </div>
-                 <div>
+                  
+                  </div>
+                  </div>
+
+                  <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Gold Diamond Rings.svg" alt="Gold Diamond Rings" class="w-fit place-self-center">
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+               <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary "> Gold Diamond Rings </h3>
                   </a>
@@ -675,24 +752,38 @@
                   </div>
 
                  </div>
-            </div>
-            <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center">
-                 </a>
-                <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
-                </div>
-                 <div>
+
+                  
+                  </div>
+                  </div>
+
+                  <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
+             
+                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center">
+                </a>
+       
+                <div class="stack gap-6 xs:justify-between ">
+               <div>
                   <a href="">
                     <h3 class="text-base  text-dark-primary ">Diamond Pearl Engagement Ring</h3>
                   </a>
@@ -713,125 +804,31 @@
                   </div>
 
                  </div>
-            </div>
-             <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Diamond Lotus Short Necklace.svg" alt="Diamond Lotus Short Necklace "class="place-self-center">
-                 </a>
-               <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
+
+                  <div class=" grid grid-row-2 gap-2 lg:grid-cols-8 lg:gap-4 w-fit ">
+                  <div class=" col-span-4 w-fit grid grid-cols-3 gap-2 lg:gap-4">
+                  <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
+                  <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
+                  </button>
+                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <i  class="hgi hgi-stroke hgi-view color-icon "></i>
                     </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
+                    <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
+                   <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
+                    </button>
+                    </div>
+                    <button class="bg-primary-500 h-12 text-white col-span-4  uppercase text-base cursor-pointer">
                             ADd to cart
                     </button>
               
                   </div>
-                </div>
-                 <div>
-                  <a href="">
-                    <h3 class="text-base  text-dark-primary ">Diamond Lotus Short Necklace</h3>
-                  </a>
+
                   
-                   <div>
-                  <span class="text-base text-primary-500 ">$150.00</span>
-
-                  <span class="text-gray-450 text-xs line-through">$180.00</span>
                   </div>
-
-              
-                  
-                  <div>
-                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
-                   </button>
-                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
-                   </button>
                   </div>
-
-                 </div>
-            </div>
-            <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Rose Gold Diamond Earrings.svg" alt="Rose Gold Diamond Earrings "class="place-self-center">
-                 </a>
-                <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
-                    </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
-                            ADd to cart
-                    </button>
-              
-                  </div>
-                </div>
-                 <div>
-                  <a href="">
-                    <h3 class="text-base  text-dark-primary ">Rose Gold Diamond Earrings</h3>
-                  </a>
-                  
-                   <div>
-                  <span class="text-base text-primary-500 ">$160.00</span>
-
-                  <span class="text-gray-450 text-xs line-through">$180.00</span>
-                  </div>
-
-              
-                  
-                  <div>
-                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
-                   </button>
-                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
-                   </button>
-                  </div>
-
-                 </div>
-            </div>
-            <div class="product">
-              <div class="h-80 relative group bg-gray-150 ">
-                 <a href="">
-                  <img src="./assest/img/product/Gold Earrings With Zircon.svg" alt="Gold Earrings With Zircon "class="place-self-center">
-                 </a>
-                 <div class=" absolute pacity-100 bottom-2 left-2 grid  gap-2 grid-cols-4 xs:grid-cols-6 xs:gap-8 lg:opacity-0 group-hover:opacity-100">
-                    <button class=" bg-white w-12 h-12 mb-2 ml-2 ">
-                     <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon text-3xl"></i></a>
-                    </button>
-                    
-                    <button class="bg-primary-500 h-12 text-white col-span-3 xs:col-span-5 mr-2 uppercase text-base ">
-                            ADd to cart
-                    </button>
-              
-                  </div>
-                </div>
-                 <div>
-                  <a href="">
-                    <h3 class="text-base  text-dark-primary ">Gold Earrings With Zircon</h3>
-                  </a>
-                  
-                   <div>
-                  <span class="text-base text-primary-500 ">$250.00</span>
-
-                  <span class="text-gray-450 text-xs line-through">$280.00</span>
-                  </div>
-
-              
-                  
-                  <div>
-                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
-                   </button>
-                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
-                   </button>
-                  </div>
-
-                 </div>
-            </div>
-        
-      
-            </div>
-            </div>
+                 
+                 
+             </div>
             <div>
               <ul class="row items-center justify-center gap-8 py-2">
                 <li class="font-medium text-[15px] xs:text-[16px] border-b border-b-gray-250 tex"> <a href="" > PREV
