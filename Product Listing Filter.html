@@ -98,13 +98,12 @@
           <div class="stack gap-8 ">
             <!-- tracking-tighter--  space between letters-->
             <div class="row items-start gap-1 uppercase text-[14px]  pt-8">
-            <a href="index.html" class="tracking-[.5px] "> Home</a>
+            <a href="index.html" class="tracking-[.5px] cursor-pointer"> Home</a>
             <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
-            <a href=""class="tracking-[.5px] "> Shop</a>
+            <a href="ProductListing.html" class="tracking-[.5px] cursor-pointer "> Shop</a>
             </div>
             <div class=" lg:grid grid-cols-[1fr_4fr] gap-12 items-start">
             <!-- FILTER-->
-             <!--تعديل شكل ال slider ، اسال المشرف عنها -->
             <div class=" filter hidden lg:stack gap-8 " >
                 <!-- Categories-->
                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
@@ -171,69 +170,77 @@
                     </h3>
                     <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
                     </div>
-                    <ul class="stack gap-4 ">
-                  <li >
+                    <ul class="stack gap-4 pb-4">
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Round" name="Round" class="hidden">
-                    <label for="Round" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Round" class="flex  gap-2 cursor-pointer text-base w-full">
+                       
                         <img src="./assest/img/home/shape/Round.svg" alt="Round" class="w-6 h-6">
                         <span>Round</span>
-                        </div>
-                         <span class="text-gray-550">(80)</span>
+                       
+                      
                     </label>         
+                       <span class="text-gray-550">(80)</span>
                   </li>
-                   <li >
+                   <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Princess" name="Princess" class="hidden">
-                    <label for="Princess" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Princess" class="flex  gap-2 cursor-pointer text-base w-full">
+                     
                         <img src="./assest/img/home/shape/Princess.svg" alt="Princess" class="w-6 h-6">
                         <span>Princess</span>
-                        </div>
-                         <span class="text-gray-550">(45)</span>
-                    </label>         
+                     
+                       
+                    </label> 
+                      <span class="text-gray-550">(45)</span>        
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Emerald" name="Emerald" class="hidden">
-                    <label for="Emerald" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Emerald"class="flex  gap-2 cursor-pointer text-base w-full">
+                       
                         <img src="./assest/img/home/shape/Emerald.svg" alt="Emerald" class="w-6 h-6">
                         <span>Emerald</span>
-                        </div>
-                         <span class="text-gray-550">(35)</span>
-                    </label>         
+                        
+                         
+                    </label>
+                    <span class="text-gray-550">(35)</span>         
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Pear" name="Pear" class="hidden">
-                    <label for="Pear" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Pear" class="flex  gap-2 cursor-pointer text-base w-full">
+                        
                         <img src="./assest/img/home/shape/Pear.svg" alt="Pear" class="w-6 h-6">
                         <span>Pear</span>
-                        </div>
-                         <span class="text-gray-550">(20)</span>
-                    </label>         
+                     
+                       
+                    </label> 
+                      <span class="text-gray-550">(20)</span>        
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Cushion" name="Cushion" class="hidden">
-                    <label for="Cushion" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Cushion" class="flex  gap-2 cursor-pointer text-base w-full">
+                         
                         <img src="./assest/img/home/shape/Cushion.svg" alt="Cushion" class="w-6 h-6">
                         <span>Cushion</span>
-                        </div>
-                         <span class="text-gray-550">(60)</span>
-                    </label>         
+                      
+                      
+                    </label> 
+                       <span class="text-gray-550">(60)</span>        
                   </li>
-                   <li class="pb-4">
+                   <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Oval" name="Oval" class="hidden">
-                    <label for="Oval" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Oval" class="flex  gap-2 cursor-pointer text-base w-full">
+           
                         <img src="./assest/img/home/shape/Oval.svg" alt="Oval" class="w-6 h-6">
                         <span>Oval</span>
-                        </div>
-                         <span class="text-gray-550">(90)</span>
-                    </label>         
+                       
+                        
+                    </label> 
+                     <span class="text-gray-550">(90)</span>        
                   </li>
+             
                   </ul>
                 </div>
+                <!--price-->
                  <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
                     <h3 class="text-[18px] font-bold tracking-[.35px]">
@@ -245,89 +252,91 @@
                     <div>
                       
                         <label for="default-range" class="block mb-2.5 text-base font-medium text-heading">Price: $0 - $2000</label>
-                        <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 bg-primary-500  text-primary-500 rounded-full  cursor-pointer">
+                        <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 accent-primary-500 rounded-full  cursor-pointer">
                     </div>
                  </div>  
                  <!-- Size-->
-                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
                     <h3 class="text-[18px] font-bold tracking-[.35px]">
                         Size
                     </h3>
                     <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
                     </div>
-                    <ul class="stack gap-4 ">
-                   <li>
-                    <label for="size-4-0" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                    <ul class="stack gap-4 pb-4">
+                   <li  class="flex justify-between items-center  w-full">
+                    <label for="size-4-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-4-0" name="size-4-0">
                     <span >4.0</span>
-                    </div>
-                    <span  class="text-gray-550">(120)</span>
+                   
                   </label>
+                  <span  class="text-gray-550">(120)</span>
                   </li>
-                  <li>
-                     <label for="size-4-5" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                     <label for="size-4-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-4-5" name="size-4-5">
                     <span >4.5</span>
-                    </div>
-                    <span class="text-gray-550">(240)</span>
+                   
+                    
                   </label>
+                  <span class="text-gray-550">(240)</span>
                   </li>
-                  <li>
-                    <label for="size-5-0" class=" row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                    <label for="size-5-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-5-0" name="size-5-0">
                     <span >5.0</span>
-                    </div>
-                    <span class="text-gray-550">(175)</span>
+                  
+                   
                     </label>
+                     <span class="text-gray-550">(175)</span>
                   </li>
-                  <li >
-                    <label for="size-6-0" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full" >
+                    <label for="size-6-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-6-0" name="size-6-0">
                     <span >6.0</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(120)</span>
-                    </label>
+                
                   </li>
-                   <li>
-                   <label  for="size-6-5" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                   <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-6-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-6-5" name="size-6-5">
                     <span>6.5</span>
-                    </div>
+                    </label>
                     <span class="text-gray-550">(90)</span>
-                   </label>
+                   
                   </li>
-                   <li>
-                   <label  for="size-7-0" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                   <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-7-0"class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-7-0" name="size-7-0">
                     <span>7.0</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(85)</span>
-                   </label>
+                  
                   </li>
-                  <li>
-                   <label  for="size-7-5" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-7-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-7-5" name="size-7-5">
                     <span>7.5</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(50)</span>
-                   </label>
+                   
                   </li>
-                  <li>
-                   <label  for="size-8-0" class="row justify-between text-base cursor-pointer pb-4">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-8-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                  
                     <input type="checkbox" id="size-8-0" name="size-8-0">
                     <span>8.0</span>
-                    </div>
+                    </label>
                     <span class="text-gray-550">(35)</span>
-                   </label>
+                  
                   </li>
                   </ul>
                 </div>
@@ -395,9 +404,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -446,9 +455,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -497,9 +506,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                     <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -516,14 +525,14 @@
 
                    <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center mt-8">
                 </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                 <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Rose Gold Lotus Necklace</h3>
                   </a>
                   
@@ -549,9 +558,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                     <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -568,14 +577,14 @@
 
                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
                 </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary ">Diamond Engagement Ring </h3>
                   </a>
                  
@@ -601,9 +610,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                     <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -620,14 +629,14 @@
 
                     <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
                 </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                 <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Prestige Diamond Earrings </h3>
                   </a>
                  
@@ -653,9 +662,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -673,14 +682,14 @@
                   
                     <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/diamond-engagement-ring.svg" alt="diamond engagement ring"  >
                 </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                 <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Solitaire Diamond Engagement Ring </h3>
                   </a>
           
@@ -706,9 +715,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -725,14 +734,14 @@
 
                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/Gold Diamond Rings.svg" alt="Gold Diamond Rings" class="w-fit place-self-center">
                 </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Gold Diamond Rings </h3>
                   </a>
           
@@ -758,9 +767,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                     <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>
@@ -777,7 +786,7 @@
 
                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center">
                 </a>
@@ -810,9 +819,9 @@
                   <button class=" bg-white w-12 h-12 border border-gray-250 cursor-pointer">
                   <i class="hgi hgi-stroke hgi-favourite color-icon "></i>
                   </button>
-                    <button class=" bg-white w-12 h-12 border border-gray-250  cursor-pointer">
+                    <a href="Product Details.html" class="flex justify-center items-center bg-white w-12 h-12 border border-gray-250  cursor-pointer">
                     <i  class="hgi hgi-stroke hgi-view color-icon "></i>
-                    </button>
+                    </a>
                     <button class=" bg-white w-12 h-12  border border-gray-250 cursor-pointer">
                    <i class="hgi hgi-stroke hgi-arrow-reload-horizontal color-icon "></i>
                     </button>

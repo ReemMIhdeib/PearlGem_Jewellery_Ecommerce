@@ -22,6 +22,12 @@
     --color-dark-primary: #0B0404;/*dark-500*/
 
     --color-golden:#CCB26A; 
+
+    /* Warning */
+    --color-Warning-500:#EAB308;
+
+    /*Error*/
+    --color-Error-500:#EF4444;
  
     /*font */
     --font-family-primary: prata;

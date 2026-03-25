@@ -104,8 +104,8 @@
             </div>
             <div class=" lg:grid grid-cols-[1fr_4fr] gap-12 items-start">
             <!-- FILTER-->
-             <!--تعديل شكل ال slider ، اسال المشرف عنها -->
-            <div class=" filter hidden lg:stack gap-8 " >
+         
+             <div class=" filter hidden lg:stack gap-8 " >
                 <!-- Categories-->
                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
@@ -171,69 +171,77 @@
                     </h3>
                     <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
                     </div>
-                    <ul class="stack gap-4 ">
-                  <li >
+                    <ul class="stack gap-4 pb-4">
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Round" name="Round" class="hidden">
-                    <label for="Round" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Round" class="flex  gap-2 cursor-pointer text-base w-full">
+                       
                         <img src="./assest/img/home/shape/Round.svg" alt="Round" class="w-6 h-6">
                         <span>Round</span>
-                        </div>
-                         <span class="text-gray-550">(80)</span>
+                       
+                      
                     </label>         
+                       <span class="text-gray-550">(80)</span>
                   </li>
-                   <li >
+                   <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Princess" name="Princess" class="hidden">
-                    <label for="Princess" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Princess" class="flex  gap-2 cursor-pointer text-base w-full">
+                     
                         <img src="./assest/img/home/shape/Princess.svg" alt="Princess" class="w-6 h-6">
                         <span>Princess</span>
-                        </div>
-                         <span class="text-gray-550">(45)</span>
-                    </label>         
+                     
+                       
+                    </label> 
+                      <span class="text-gray-550">(45)</span>        
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Emerald" name="Emerald" class="hidden">
-                    <label for="Emerald" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Emerald"class="flex  gap-2 cursor-pointer text-base w-full">
+                       
                         <img src="./assest/img/home/shape/Emerald.svg" alt="Emerald" class="w-6 h-6">
                         <span>Emerald</span>
-                        </div>
-                         <span class="text-gray-550">(35)</span>
-                    </label>         
+                        
+                         
+                    </label>
+                    <span class="text-gray-550">(35)</span>         
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Pear" name="Pear" class="hidden">
-                    <label for="Pear" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Pear" class="flex  gap-2 cursor-pointer text-base w-full">
+                        
                         <img src="./assest/img/home/shape/Pear.svg" alt="Pear" class="w-6 h-6">
                         <span>Pear</span>
-                        </div>
-                         <span class="text-gray-550">(20)</span>
-                    </label>         
+                     
+                       
+                    </label> 
+                      <span class="text-gray-550">(20)</span>        
                   </li>
-                  <li >
+                  <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Cushion" name="Cushion" class="hidden">
-                    <label for="Cushion" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Cushion" class="flex  gap-2 cursor-pointer text-base w-full">
+                         
                         <img src="./assest/img/home/shape/Cushion.svg" alt="Cushion" class="w-6 h-6">
                         <span>Cushion</span>
-                        </div>
-                         <span class="text-gray-550">(60)</span>
-                    </label>         
+                      
+                      
+                    </label> 
+                       <span class="text-gray-550">(60)</span>        
                   </li>
-                   <li class="pb-4">
+                   <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Oval" name="Oval" class="hidden">
-                    <label for="Oval" class="row justify-between text-base cursor-pointer">
-                         <div class="row gap-2">
+                    <label for="Oval" class="flex  gap-2 cursor-pointer text-base w-full">
+           
                         <img src="./assest/img/home/shape/Oval.svg" alt="Oval" class="w-6 h-6">
                         <span>Oval</span>
-                        </div>
-                         <span class="text-gray-550">(90)</span>
-                    </label>         
+                       
+                        
+                    </label> 
+                     <span class="text-gray-550">(90)</span>        
                   </li>
+             
                   </ul>
                 </div>
+                <!--price-->
                  <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
                     <h3 class="text-[18px] font-bold tracking-[.35px]">
@@ -245,89 +253,91 @@
                     <div>
                       
                         <label for="default-range" class="block mb-2.5 text-base font-medium text-heading">Price: $0 - $2000</label>
-                        <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 bg-primary-500  text-primary-500 rounded-full  cursor-pointer">
+                        <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 accent-primary-500 rounded-full  cursor-pointer">
                     </div>
                  </div>  
                  <!-- Size-->
-                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
+                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
                     <div class="row justify-between "> <!-- title-->
                     <h3 class="text-[18px] font-bold tracking-[.35px]">
                         Size
                     </h3>
                     <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
                     </div>
-                    <ul class="stack gap-4 ">
-                   <li>
-                    <label for="size-4-0" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                    <ul class="stack gap-4 pb-4">
+                   <li  class="flex justify-between items-center  w-full">
+                    <label for="size-4-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-4-0" name="size-4-0">
                     <span >4.0</span>
-                    </div>
-                    <span  class="text-gray-550">(120)</span>
+                   
                   </label>
+                  <span  class="text-gray-550">(120)</span>
                   </li>
-                  <li>
-                     <label for="size-4-5" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                     <label for="size-4-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-4-5" name="size-4-5">
                     <span >4.5</span>
-                    </div>
-                    <span class="text-gray-550">(240)</span>
+                   
+                    
                   </label>
+                  <span class="text-gray-550">(240)</span>
                   </li>
-                  <li>
-                    <label for="size-5-0" class=" row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                    <label for="size-5-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-5-0" name="size-5-0">
                     <span >5.0</span>
-                    </div>
-                    <span class="text-gray-550">(175)</span>
+                  
+                   
                     </label>
+                     <span class="text-gray-550">(175)</span>
                   </li>
-                  <li >
-                    <label for="size-6-0" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full" >
+                    <label for="size-6-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                   
                     <input type="checkbox" id="size-6-0" name="size-6-0">
                     <span >6.0</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(120)</span>
-                    </label>
+                
                   </li>
-                   <li>
-                   <label  for="size-6-5" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                   <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-6-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-6-5" name="size-6-5">
                     <span>6.5</span>
-                    </div>
+                    </label>
                     <span class="text-gray-550">(90)</span>
-                   </label>
+                   
                   </li>
-                   <li>
-                   <label  for="size-7-0" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                   <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-7-0"class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-7-0" name="size-7-0">
                     <span>7.0</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(85)</span>
-                   </label>
+                  
                   </li>
-                  <li>
-                   <label  for="size-7-5" class="row justify-between text-base cursor-pointer ">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-7-5" class="flex  gap-2 cursor-pointer text-base w-full">
+                    
                     <input type="checkbox" id="size-7-5" name="size-7-5">
                     <span>7.5</span>
-                    </div>
+                     </label>
                     <span class="text-gray-550">(50)</span>
-                   </label>
+                   
                   </li>
-                  <li>
-                   <label  for="size-8-0" class="row justify-between text-base cursor-pointer pb-4">
-                    <div class="row gap-2">
+                  <li  class="flex justify-between items-center  w-full">
+                   <label  for="size-8-0" class="flex  gap-2 cursor-pointer text-base w-full">
+                  
                     <input type="checkbox" id="size-8-0" name="size-8-0">
                     <span>8.0</span>
-                    </div>
+                    </label>
                     <span class="text-gray-550">(35)</span>
-                   </label>
+                  
                   </li>
                   </ul>
                 </div>
