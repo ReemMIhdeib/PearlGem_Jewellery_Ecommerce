@@ -98,31 +98,31 @@
           <div class="stack gap-12 ">
             <!-- tracking-tighter--  space between letters-->
             <div class="row items-start gap-1 uppercase text-[14px]  pt-8">
-            <a href="index.html" class="tracking-[.5px] cursor-pointer"> Home</a>
+            <a href="index.html" class="tracking-[.5px] cursor-pointer bg-Error-500"> Home</a>
             <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
             <a href="ProductListing.html" class="tracking-[.5px] cursor-pointer "> Shop</a>
             <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
             <a href="" class="text-[12px] xs:text-[14px] xs:tracking-[.5px] "> DIAMOND PERAL ENGAGEMENT RING</a>
             </div>
 
-            <div class="grid grid-rows-2 lg:grid-cols-2 gap-17  lg:grid-rows-1 ">
+            <div class="grid grid-rows-[1fr,2fr] lg:grid-cols-2 gap-17  lg:grid-rows-1 ">
 
-                <div class="grid grid-rows-[3fr,1fr]   gap-4 h-full ">
+                <div class="grid grid-rows-[3fr,1fr]   gap-4 lg:h-full ">
                
-                  <div class=" h-100 xs:h-118 lg:h-180  bg-gray-150 flex justify-center items-center ">
+                  <div class=" h-fit xs:h-118 lg:h-full  bg-gray-150 flex justify-center items-center ">
                
                   <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center w-[140%] h-[140%] md:w-[120%] md:h-[120%]   lg:w-[200%] lg:h-[200%]">
                 
                   </div>
-                  <div class="  grid grid-rows-[1fr,2fr] lg:grid-cols-2 gap-4 ">
+                  <div class="  grid grid-rows-[1fr,2fr] lg:grid-cols-2 gap-4 lg:h-full lg:w-full">
               
-                   <img src="./assest/img/home/stylish-jewelry-like-silver-gold-diamonds-precious-stones 1.png" alt="stylish-jewelry-like-silver-gold-diamonds-precious-stones" class="h-full w-full place-self-start">
+                   <img src="./assest/img/home/stylish-jewelry-like-silver-gold-diamonds-precious-stones 1.png" alt="stylish-jewelry-like-silver-gold-diamonds-precious-stones" class="lg:h-full lg:w-full place-self-start ">
                     
                    <ul class="   grid grid-rows-2 gap-4  ">
-                    <li class="h-66 bg-gray-150">
+                    <li class="h-fit bg-gray-150 md:h-full  items-center justify-center flex">
                      <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center  ">
                     </li>
-                     <li class="h-66 bg-gray-150">
+                     <li class="h-66 bg-gray-150 md:h-full items-center justify-center flex">
                      <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center">
                     </li>
                   </ul>
@@ -268,7 +268,7 @@
                     
                     </div>
                  
-                    <div class=" stack  justify-between   flex-wrap gap-4 sm:row    py-6 border-b-2 border-b-gray-250  h-fit w-full">
+                    <div class=" stack  justify-between items-start  flex-wrap gap-4 sm:row    py-6 border-b-2 border-b-gray-250  h-fit w-full">
                         
                       <div class="stack gap-4 items-center ">
                          <i class="hgi hgi-stroke hgi-security-check text-3xl"></i>
@@ -295,7 +295,7 @@
                          </div>
                     </div>
                  
-                     <div class=" stack  justify-between   items-center sm:items-start flex-wrap gap-4 sm:row    py-6 border-b-2 border-b-gray-250  h-fit w-full">
+                     <div class=" stack  justify-between   items-start flex-wrap gap-4 sm:row    py-6 border-b-2 border-b-gray-250  h-fit w-full">
                           
                       <button class="row gap-2">
                             <i class="hgi hgi-stroke hgi-arrow-left-right"></i>
@@ -326,17 +326,77 @@
                           </div>
 
                       </div>
-                      <!--اسال اذا في tag بتخفي وبتظهر-->
-                      <div class=" stack    flex-wrap gap-4    py-6 border-b-2 border-b-gray-250  h-fit">
+                  
+              
+                          <div id="accordion-color" data-accordion="collapse" class=" pt-8  overflow-hidden stack gap-6">
+  <h2 id="accordion-color-heading-1">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+      <span class="text-base">DESCRIPTIONS</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-color-body-1" class="hidden border-b border-b-gray-250" aria-labelledby="accordion-color-heading-1">
+    <div class="py-3 ">
+      <p class=" text-[14px] text-gray-550">
+        The Diamond Scattered Stud Earrings are crafted from high-quality gold,
+         featuring a unique pattern of brilliant round diamonds totaling approximately 1.06 carats. 
+         Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+         content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+    </div>
+  </div>
+   <h2 id="accordion-color-heading-2">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="true" aria-controls="accordion-color-body-2">
+      <span class="text-base">SHIPPING</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-color-body-2" class="hidden border-b border-b-gray-250" aria-labelledby="accordion-color-heading-2">
+    <div class="py-3 ">
+      <p class=" text-[14px] text-gray-550">
+        The Diamond Scattered Stud Earrings are crafted from high-quality gold,
+         featuring a unique pattern of brilliant round diamonds totaling approximately 1.06 carats. 
+         Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+         default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+    </div>
+  </div>
+   <h2 id="accordion-color-heading-3">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="true" aria-controls="accordion-color-body-3">
+      <span class="text-base">PACKAGING</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-color-body-3" class="hidden border-b border-b-gray-250" aria-labelledby="accordion-color-heading-3">
+    <div class="py-3 ">
+      <p class=" text-[14px] text-gray-550">
+        The Diamond Scattered Stud Earrings are crafted from high-quality gold,
+         featuring a unique pattern of brilliant round diamonds totaling approximately 1.06 carats. 
+         Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+    </div>
+  </div>
+    <h2 id="accordion-color-heading-4">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="true" aria-controls="accordion-color-body-4">
+      <span class="text-base text-start ">RETURNS AND CANCELLATIONS</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-color-body-4" class="hidden border-b border-b-gray-250" aria-labelledby="accordion-color-heading-4">
+    <div class="py-3 ">
+      <p class=" text-[14px] text-gray-550">
+        The Diamond Scattered Stud Earrings are crafted from high-quality gold,
+         featuring a unique pattern of brilliant round diamonds totaling approximately 1.06 carats. 
+         Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+    </div>
+  </div>
+  
 
-                      </div>
+                          </div>
+
 
 
 
                 </div>
-
-
-               
+        
              </div>
 
              <div >
@@ -402,10 +462,271 @@
                    </div>
              </div>
              
+                <div id="default-carousel" class="relative w-full" data-carousel="slide" data-carousel-interval="7000">
+          <div class=" stack items-start gap-2 xs:row justify-between pb-12">
+           <h2 class="text-3xl md:text-4xl"> Similar Products </h2>
+           <div class="row gap-4">
+           <button class=" w-12 h-12 border border-gray-250 rounded-full  hover:bg-primary-500 hover:text-white" data-carousel-prev>
+              <i class="hgi hgi-stroke hgi-arrow-left-02"></i>
+            </button>
+            <button class=" w-12 h-12 border border-gray-250 rounded-full  hover:bg-primary-500 hover:text-white" data-carousel-next>
+              <i class="hgi hgi-stroke hgi-arrow-right-02"></i>
+            </button>
+            </div>
             </div>
 
+             <!-- Carousel wrapper -->
+    <div class="relative h-180 xs:130 overflow-hidden rounded-base  md:100 lg:h-96">
+         <!-- Item 1 -->
+        <div class=" products grid   grid-cols-1  md:grid-cols-2  gap-8 lg:grid-cols-4" data-carousel-item>
+           <div class="product">
+              <div class="h-80 bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center">
+                 </a>
+             
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Rose Gold Lotus Necklace</h3>
+                  </a>
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$200.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$220.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+             <div class="product">
+              <div class="h-80  bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
+                 </a>
+                  
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Diamond Engagement Ring </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$240.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$250.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+             <div class="product">
+              <div class="h-80  bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
+                 </a>
+                 
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Prestige Diamond Earrings </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$140.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$150.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class="h-80  bg-gray-150  ">
+                 <a href="" class="m-auto">
+                  <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
+                 </a>
+                  
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Rose Gold Diamond Ring</h3>
+                  </a>
+               
+                   <div>
+                  <span class="text-base text-primary-500 ">$280.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$300.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+        </div>
+        <!-- Item 2 -->
+      <div class=" products grid   grid-cols-1  md:grid-cols-2  gap-8 lg:grid-cols-4" data-carousel-item>
+           
+             <div class="product">
+              <div class="h-80  bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Diamond Engagement Ring.svg" alt="Diamond Engagement Ring" class="place-self-center pt-8">
+                 </a>
+                  
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary ">Diamond Engagement Ring </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$240.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$250.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+             <div class="product">
+              <div class="h-80  bg-gray-150 ">
+                 <a href="">
+                  <img src="./assest/img/product/Prestige Diamond Earrings.svg" alt="Prestige Diamond Earrings" class="place-self-center">
+                 </a>
+                 
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Prestige Diamond Earrings </h3>
+                  </a>
+                 
+                   <div>
+                  <span class="text-base text-primary-500 ">$140.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$150.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class="h-80  bg-gray-150  ">
+                 <a href="" class="m-auto">
+                  <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
+                 </a>
+                  
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Rose Gold Diamond Ring</h3>
+                  </a>
+               
+                   <div>
+                  <span class="text-base text-primary-500 ">$280.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$300.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+            <div class="product">
+              <div class=" h-80  bg-gray-150  ">
+                 <a href="">
+                  <img src="./assest/img/product/diamond-engagement-ring.svg" alt="diamond engagement ring" class="w-fit place-self-center">
+                 </a>
+                
+               
+
+                </div>
+                 <div>
+                  <a href="">
+                    <h3 class="text-base  text-dark-primary "> Solitaire Diamond Engagement Ring </h3>
+                  </a>
+          
+                   <div>
+                  <span class="text-base text-primary-500 ">$230.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$250.00</span>
+                  </div>
+
+              
+                  
+                  <div>
+                   <button class=" w-4 h-4 border border-gray-250 bg-gray-250 rounded-full">
+                   </button>
+                   <button class=" w-4 h-4 border border-golden bg-golden rounded-full">
+                   </button>
+                  </div>
+
+                 </div>
+            </div>
+        </div>
           </div>
-       
+                </div>
+          </div>
+        </div>
     </section>
 </main>
 
