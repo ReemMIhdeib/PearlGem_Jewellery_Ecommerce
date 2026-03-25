@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap" rel="stylesheet">
+  <!--icon-->
+  <!--fontawson-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--hugeicons-->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+ 
+
+  <!--lab-->
+ <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!--css-->
+  <link rel="stylesheet" href=".\assest\css\output.css">
+  
+  <!--npm run build:css-->
+
+  <title>PearlGem</title>
+</head>
+
+<body class="font-family-primary bg-white text-dark-primary">
+
+  <!-- -----header----- -->
+  <header class="   text-center  ">
+
+    <div class="container mx-auto px-8 ">
+      <!-- Hidden on mobile, visible on lg for desktop  -->
+      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-2 ">
+        <div class=" row gap-2">
+          <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i>
+          <p class="text-base  text-gray-750"> (307) 555-0133</p>
+        </div>
+
+
+        <p class="text-dark-primary">Get 50% OFF on Engagement Rings</p>
+
+
+        <div class="row gap-4">
+          <div class="row gap-1">
+            <p>EN</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+          <div class="row gap-1">
+            <p>USD</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+        </div>
+      </div>
+   <!-- ----- Main Header ----- -->
+      <div class="flex justify-between items-center py-6 ">
+        <div class="row  justify-center gap-2 sm:gap-4">
+          <!-- visible on  mobile , lg Hidden on  for desktop -->
+          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
+          <!--scale-x-[-1]" Horizontal flip "-->
+             <!--logo-->
+          <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+        </div>
+      <!-- Hidden on mobile, visible on lg   -->
+       <nav>
+        <ul class=" hidden lg:row gap-8 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> EARRINGS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> PENDENTS</a></li>
+          <li> <a href=""> NECKLACES</a></li>
+
+        </ul>
+        </nav>
+        <ul class="  row justify-between gap-1 sm:gap-6">
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
+          <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
+          <li class="hidden lg:block"><a href=""><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </header>
+<main>
+  <section>
+    <div class="container mx-auto px-8">
+    <h1 class="text-3xl mt-10"> My Cart</h1>
+  
+    
+    
+    <div class="grid  grid-row-2  lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
+      
+    <div>
+      <!--Top Controls-->
+    <div class=" stack gap-4 md:row justify-between  pb-4 pt-8">
+    <div class="row gap-2 ">
+      <input type="checkbox" id=" Items Selected" name=" Items Selected" class="text-primary-500">
+      <label for=" Items Selected h-full" > 
+     <span>2/2</span> Items Selected 
+       </label>
+    </div>
+    <div class="row gap-4">
+      <button class="bg-Error-50 h-10 w-10 cursor-pointer">
+      <i class="hgi hgi-stroke hgi-delete-02 text-Error-500 " ></i>
+      </button>
+      <button class=" border border-primary-500  text-sm text-primary-500 uppercase h-10 w-42 cursor-pointer">
+        MOVE TO WISHLIST
+      </button>
+    </div>
+    </div>
+    <!--products-->
+    <div class="stack gap-4">
+      <!--Product Card-->
+          <div class=" shadow-2xs border-gray-250 border-2  relative    ">
+                  <button class="absolute top-2 md:top-4 right-4 pointer-coarse cursor-pointer hover:bg-primary-500 hover:text-white">
+                    <i class="hgi hgi-stroke hgi-cancel-01"></i>
+                  </button>
+            <div class="row gap-4 w-full ml-4 mt-8 md:mt-4 mb-5 mr-8 items-start justify-start">
+             
+                 <div class="h-30 w-30 md:h-50  md:w-42 bg-gray-150 flex justify-center items-center ">
+                  
+                  <img src="./assest/img/product/Diamond Pearl Engagement Ring.svg" alt="Diamond Pearl Engagement Ring "class="place-self-center h-fit w-fit">
+                 </div>
+       
+                <div class="stack gap-2 justify-start ">
+              
+                  
+                    <h2 class="text-base  text-dark-primary ">Diamond Pearl Engagement Ring</h2>
+                  
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$160.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$170.00</span>
+                  </div>
+                  
+                  <span class="capitalize text-gray-550 "> Color: Silver</span>
+                  <div class="flex items-center border rounded-md px-2 py-1 w-fit border-gray-250">
+               <span class="text-sm mr-1">Qty:</span>
+              <input type="number"  value="1" min="1" class="w-8 border-none focus:ring-0 p-0 text-sm appearance-none" >
+    
+  
+ 
+                  </div>
+
+                  <div class="row gap-2 items-start justify-start">
+                    <i class="hgi hgi-stroke hgi-delivery-return-01"></i>
+                    <p class="text-gray-550 text-base stack xs:row gap-0.75"> <span class="text-dark-primary"> 15 Days </span> return available</p>
+                  </div>
+
+                    <div class="row gap-2 items-start justify-star">
+                   <i class="hgi hgi-stroke hgi-delivery-box-01"></i>
+                    <p class="text-gray-550 text-base stack xs:row gap-0.75"> Delivered by <span class="text-dark-primary">  Feb 25, 2025</span> </p>
+                  </div>
+                  
+
+                
+
+
+
+                  
+
+                  
+                  </div>
+                
+                  </div>
+              
+          </div>
+ <!--Product Card-->
+           <div class=" shadow-2xs border-gray-250 border-2  relative    ">
+                  <button class="absolute top-2 md:top-4 right-4 pointer-coarse cursor-pointer hover:bg-primary-500 hover:text-white">
+                    <i class="hgi hgi-stroke hgi-cancel-01"></i>
+                  </button>
+            <div class="row gap-4 w-full ml-4 mt-8 md:mt-4 mb-5 mr-8 items-start justify-start">
+             
+                 <div class="h-30 w-30 md:h-50  md:w-42 bg-gray-150 flex justify-center items-center ">
+                  
+                  
+                  <img src="./assest/img/product/Rose Gold Lotus Necklace.svg" alt="Rose Gold Lotus Necklaceg" class="place-self-center  h-fit w-fit">
+                 </div>
+       
+                <div class="stack gap-2 justify-start ">
+              
+                  
+                    <h2 class="text-base  text-dark-primary ">Rose Gold Lotus Necklace</h2>
+                  
+                  
+                   <div>
+                  <span class="text-base text-primary-500 ">$200.00</span>
+
+                  <span class="text-gray-450 text-xs line-through">$220.00</span>
+                  </div>
+                  
+                  <span class="capitalize text-gray-550 "> Color: Gold</span>
+                  <div class="flex items-center border rounded-md px-2 py-1 w-fit border-gray-250">
+               <span class="text-sm mr-1">Qty:</span>
+              <input type="number"  value="1" min="1" class="w-8 border-none focus:ring-0 p-0 text-sm appearance-none" >
+    
+  
+ 
+                  </div>
+
+                  <div class="row gap-2 items-start justify-start">
+                    <i class="hgi hgi-stroke hgi-delivery-return-01"></i>
+                    <p class="text-gray-550 text-base stack xs:row gap-0.75"> <span class="text-dark-primary"> 15 Days </span> return available</p>
+                  </div>
+
+                    <div class="row gap-2 items-start justify-star">
+                   <i class="hgi hgi-stroke hgi-delivery-box-01"></i>
+                    <p class="text-gray-550 text-base stack xs:row gap-0.75"> Delivered by <span class="text-dark-primary">  Feb 25, 2025</span> </p>
+                  </div>
+                  
+
+                
+
+
+
+                  
+
+                  
+                  </div>
+                
+                  </div>
+              
+          </div>
+   </div>
+
+          </div>
+     <!--Order Summary-->
+          <div class="border border-gray-250 mt-8 p-6 h-fit">
+              <div class="flex justify-between border-b border-b-gray-250 pb-4"> 
+                <span > Subtotal</span>
+                <span>$360.00</span>
+              </div>
+
+              <div class="py-4 stack gap-1">
+                <label for="discount-code">Enter Discount Code</label>
+                <div class=" row gap-0 h-fit">
+                <input type="text" placeholder="OFFER50" id="discount-code" class="border border-r-0 border-gray-250 w-full h-12">
+                <button class="bg-primary-500 text-white h-12 w-28.5 cursor-pointer"> APPLY</button>
+                </div>
+              </div>
+
+                <div class="flex justify-between  pb-4"> 
+                <span > Taxes</span>
+                <span>$25.00</span>
+              </div>
+              <div class="flex justify-between border-b border-b-gray-250 pb-4"> 
+                <span > Delivery Fee</span>
+                <span class="text-[#16A34A]">FREE</span>
+              </div>
+              <div class="flex justify-between  py-4"> 
+              <h3 class="text-xl font-medium">  Grand Total </h3>
+              <span class="text-xl font-medium">$385.00</span>
+              </div>
+             
+              <button class="bg-primary-500 text-white h-12 w-full cursor-pointer  "> CHECKOUT</button>
+          </div>
+     </div>
+
+
+    </div>
+
+   
+  </section>
+
+</main>
+
+<!-- ----- FOOT
+ ER ----- -->
+  <footer>
+    
+      
+      <!-- ------Contact + Newsletter------ -->
+      <div class="py-10 border-b border-b-gray-250 ">
+     
+         <!--  Footer Navigation -->
+      <div class=" py-8 text-base text-dark-primary   ">
+       <div class="container mx-auto px-8   ">
+        <div class= " grid grid-cols-1 gap-8 place-items-center  lg:row justify-between">
+        <ul class="  flex flex-wrap  justify-center   gap-6 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> about us</a></li>
+          <li> <a href=""> CONTACT US</a></li>
+
+        </ul>
+
+        <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+
+        <ul class="  row gap-6 uppercase ">
+          <li> <a href=""> TERMS & CONDITIONS</a></li>
+          <li> <a href=""> PRIVACY POLICY</a></li>
+        </ul>
+          </div>
+      </div>
+     </div>
+      <div class=" py-4  bg-primary-500 text-white ">
+        <div class="container mx-auto px-8 ">
+           <!-- Copyright  -->
+          <div class=" stack gap-4 place-items-center md:row justify-between">
+        <p>Copyright © 2025 PearlGem. All Rights Reserved.</p>
+         <!-- Payment methods -->
+        <ul class="  row gap-4 uppercase ">
+          <li> <img src="./assest/img/footer/klarna.png" alt="klarna"></li>
+          <li> <img src="./assest/img/footer/Visa.png" alt="Visa"></li>
+          <li> <img src="./assest/img/footer/PayPal.png" alt="PayPal"></li>
+          <li> <img src="./assest/img/footer/Amex.png" alt="Amex"></li>
+          <li> <img src="./assest/img/footer/Discover.png" alt="Discover"></li>
+          <li> <img src="./assest/img/footer/Mastercard.png" alt="Mastercard"></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
+  
