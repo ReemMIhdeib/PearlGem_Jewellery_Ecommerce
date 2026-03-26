@@ -96,10 +96,11 @@
 <main>
   <section class="pb-20  ">
     <div class="container mx-auto px-8">
-    <h1 class="text-3xl mt-10 mb-8"> Select Address</h1>
-
+       <h1 class="text-3xl mt-10 mb-8"> Checkout Details</h1>
      <div class="grid  grid-row-2  lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
       <div>
+
+        
     <div class="relative mb-8 ">
    <div class="absolute top-6 left-0 w-full h-0 border-t border-dashed border-gray-250 -z-10"></div> 
     <ul class="flex flex-wrap justify-between items-start  w-full text-sm font-medium " id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
@@ -150,15 +151,18 @@
       
     </ul>
 </div>
-<div id="default-tab-content">
-    <div class="hidden p-4  rounded-base stack gap-8" id="address" role="tabpanel" aria-labelledby="address-tab">
-     <div class="stack gap-4">
-      <h2 class="text-xl font-medium">Default Address</h2>
+<div id="default-tab-content ">
+
+    <div class="hidden p-4  rounded-base stack gap-8 " id="address" role="tabpanel" aria-labelledby="address-tab">
+      <h2 class="text-[28px] ">Select Address</h2>
+
+     <div class="stack gap-4 ">
+      <h3 class="text-xl font-medium">Default Address</h3>
       <div class="border border-gray-250 shadow-sm row  gap-3">
            <input type="radio" id="home" name="address" checked class="text-primary-500  mt-4 ml-4 self-start ">
            <div class="stack gap-2 my-4 w-full">
             <div class="row gap-2 ">
-           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+           <label for="home" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
            <span class="w-13 h-7 bg-primary-500 text-white  text-[12px] justify-center flex items-center"> Home</span>
            </div>
            <p class="text-sm text-gray-550">6391 Elgin St. Celina, Delaware 10299</p>
@@ -172,13 +176,13 @@
         </div>
         </div>
 
-         <div class="stack gap-4">
-      <h2 class="text-xl font-medium">Other Address</h2>
+         <div class="stack gap-4 ">
+      <h3 class="text-xl font-medium">Other Address</h3>
       <div class="border border-gray-250 shadow-sm row  gap-3">
-           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <input type="radio" id="address-2" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
            <div class="stack gap-2 my-4 w-full">
             
-           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+           <label for="address-2" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
         
            <p class="text-sm text-gray-550">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
            <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(603) 555-0123</span></p>
@@ -191,10 +195,10 @@
         </div>
 
         <div class="border border-gray-250 shadow-sm row  gap-3">
-           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <input type="radio" id="address-3" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
            <div class="stack gap-2 my-4 w-full">
             
-           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+           <label for="address-3" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
         
            <p class="text-sm text-gray-550">2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
            <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(629) 555-0129</span></p>
@@ -206,10 +210,10 @@
    
         </div>
         <div class="border border-gray-250 shadow-sm row  gap-3">
-           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <input type="radio" id="address-4" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
            <div class="stack gap-2 my-4 w-full">
             
-           <label for="address" class="text-[18px] tracking-[1px]">Wade Warren</label>
+           <label for="address-4" class="text-[18px] tracking-[1px]">Wade Warren</label>
         
            <p class="text-sm text-gray-550">3891 Ranchview Dr. Richardson, California 62639</p>
            <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(270) 555-0117</span></p>
@@ -224,13 +228,60 @@
 
         </div>
 
-              <button class=" border border-primary-500  text-sm text-primary-500 uppercase h-14 w-64 row justify-center gap-2.5 cursor-pointer">
+       <button class="border border-primary-500  text-sm text-primary-500 uppercase h-14 w-64 row justify-center gap-2.5 cursor-pointer">
                 <i class="hgi hgi-stroke hgi-add-01 text-xl"></i>
         ADD NEW ADDRESS
       </button>
     </div>
-    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="payment" role="tabpanel" aria-labelledby="payment-tab">
-        <p class="text-sm text-body">This is some placeholder content the <strong class="font-medium text-heading">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    <div class="hidden p-4 stack gap-6 " id="payment" role="tabpanel" aria-labelledby="payment-tab">
+      <h2 class="text-[28px] ">Payment Method</h2>
+
+     <div class=" stack gap-4 group">
+      
+      <div class="row gap-2 justify-center   ">
+      
+           <input type="radio" id="Credit-card" name="payment-method"   class="text-primary-500 cursor-pointer self-start "> 
+            <label for="Credit-card" class="w-full text-[18px] tracking-[1px] cursor-pointer"> Credit/Debit Card</label>
+            </div>
+            <div class=" hidden group-has-[input:checked]:stack gap-6 ">
+              <ul class="grid grid-cols-2 gap-4"> 
+                
+              <li class="stack ">
+              <label for="Card-Number" class="text-gray-550 text-sm">Card Number</label>
+              <input type="text" id="Card-Number" placeholder="8291 3746 XX89 2635" class="border border-gray-250 px-3 w-full pl-4 text-base">
+            </li>
+             <li class="stack ">
+              <label for="Card-Holder-Name" class="text-gray-550 text-sm">Card Holder Name</label>
+              <input type="text" id="Card-Holder-Name" placeholder="Alexa Willioms" class="border border-gray-250 px-3 w-full pl-4 text-base">
+            </li>
+             <li class="stack ">
+              <label for="Expiry-Date" class="text-gray-550 text-sm">Expiry Date</label>
+              <input type="text" id="Expiry-Date" placeholder="12/2028" class="border border-gray-250 px-3 w-full pl-4 text-base">
+            </li>
+             <li class="stack ">
+              <label for="CVC" class="text-gray-550 text-sm">CVC </label>
+              <input type="password" id="CVC" placeholder="..." class="border border-gray-250 px-3 w-full pl-4 text-base">
+            </li>
+             </ul>
+            <button class=" border bg-primary-500  text-sm text-white uppercase h-14 w-30.5 cursor-pointer">
+              PAY NOW
+             </button>
+        </div>
+     </div>
+
+     <div class=" stack gap-4 group">
+      <div class="row gap-2 justify-center  ">
+           <input type="radio" id="Paypal" name="payment-method"   class="text-primary-500  cursor-pointer self-start peer"> 
+            <label for="Paypal" class="w-full cursor-pointer text-[18px] tracking-[1px]"> Paypal </label>
+            </div>
+            <div class="hidden group-has-[input:checked]:block  ">
+              
+            <button class=" border bg-primary-500  text-sm text-white uppercase h-14 w-30.5 cursor-pointer">
+              PAY NOW
+             </button>
+        </div>
+     </div>
+     
     </div>
     <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="review" role="tabpanel" aria-labelledby="review-tab">
         <p class="text-sm text-body">This is some placeholder content the <strong class="font-medium text-heading">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
