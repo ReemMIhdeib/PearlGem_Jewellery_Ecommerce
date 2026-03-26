@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap" rel="stylesheet">
+  <!--icon-->
+  <!--fontawson-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--hugeicons-->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+ 
+
+  <!--lab-->
+ <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!--css-->
+  <link rel="stylesheet" href=".\assest\css\output.css">
+  
+  <!--npm run build:css-->
+
+  <title>Select Address</title>
+</head>
+
+<body class="font-family-primary bg-white text-dark-primary">
+
+  <!-- -----header----- -->
+  <header class="   text-center  ">
+
+    <div class="container mx-auto px-8 ">
+      <!-- Hidden on mobile, visible on lg for desktop  -->
+      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-2 ">
+        <div class=" row gap-2">
+          <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i>
+          <p class="text-base  text-gray-750"> (307) 555-0133</p>
+        </div>
+
+
+        <p class="text-dark-primary">Get 50% OFF on Engagement Rings</p>
+
+
+        <div class="row gap-4">
+          <div class="row gap-1">
+            <p>EN</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+          <div class="row gap-1">
+            <p>USD</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+        </div>
+      </div>
+   <!-- ----- Main Header ----- -->
+      <div class="flex justify-between items-center py-6 ">
+        <div class="row  justify-center gap-2 sm:gap-4">
+          <!-- visible on  mobile , lg Hidden on  for desktop -->
+          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
+          <!--scale-x-[-1]" Horizontal flip "-->
+             <!--logo-->
+             <a href="index.html">
+          <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+          </a>
+        </div>
+      <!-- Hidden on mobile, visible on lg   -->
+       <nav>
+        <ul class=" hidden lg:row gap-8 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> EARRINGS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> PENDENTS</a></li>
+          <li> <a href=""> NECKLACES</a></li>
+
+        </ul>
+        </nav>
+        <ul class="  row justify-between gap-1 sm:gap-6">
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
+          <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
+          <li class="hidden lg:block"><a href=""><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
+          <li> <a href="My Cart.html"> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </header>
+
+<main>
+  <section class="pb-20  ">
+    <div class="container mx-auto px-8">
+    <h1 class="text-3xl mt-10 mb-8"> Select Address</h1>
+
+     <div class="grid  grid-row-2  lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
+      <div>
+    <div class="relative mb-8 ">
+   <div class="absolute top-6 left-0 w-full h-0 border-t border-dashed border-gray-250 -z-10"></div> 
+    <ul class="flex flex-wrap justify-between items-start  w-full text-sm font-medium " id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+        <li class="flex-1" role="presentation">
+
+            <button class="group flex flex-col items-center w-full" id="address-tab" data-tabs-target="#address" type="button" role="tab" aria-controls="address" aria-selected="false">
+                
+                 <div class="w-12 h-12 flex items-center justify-center rounded border border-gray-150 bg-gray-150 text-dark-primary
+                    group-aria-selected:bg-primary-500 group-aria-selected:border-primary-500 group-aria-selected:text-white transition-all">
+            <i class="hgi hgi-stroke hgi-home-01 text-xl"></i>
+        </div>
+
+        <span class="mt-2 text-xs font-medium text-dark-primary">
+            Address
+        </span>
+            
+            </button>
+        </li>
+        <li class="flex-1" role="presentation"> 
+    
+            <button class="group flex flex-col items-center w-full" id="payment-tab" data-tabs-target="#payment" type="button" role="tab" aria-controls="payment" aria-selected="false">
+                
+                 <div class="w-12 h-12 flex items-center justify-center rounded border border-gray-150 bg-gray-150 text-dark-primary
+                    group-aria-selected:bg-primary-500 group-aria-selected:border-primary-500 group-aria-selected:text-white transition-all">
+                <i class="hgi hgi-stroke hgi-credit-card  text-xl"></i>
+        </div>
+
+        <span class="mt-2 text-xs font-medium text-dark-primary">
+                Payment Method
+        </span>
+            
+            </button>
+        </li>
+        <li class="flex-1" role="presentation">  
+              <button class="group flex flex-col items-center w-full" id="review-tab" data-tabs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+                
+                 <div class="w-12 h-12 flex items-center justify-center rounded border border-gray-150 bg-gray-150 text-dark-primary
+                    group-aria-selected:bg-primary-500 group-aria-selected:border-primary-500 group-aria-selected:text-white transition-all">
+               <i class="hgi hgi-stroke hgi-task-02 text-xl"></i>
+        </div>
+
+        <span class="mt-2 text-xs font-medium text-dark-primary">
+               Review
+        </span>
+            
+            </button>
+        </li>
+      
+    </ul>
+</div>
+<div id="default-tab-content">
+    <div class="hidden p-4  rounded-base stack gap-8" id="address" role="tabpanel" aria-labelledby="address-tab">
+     <div class="stack gap-4">
+      <h2 class="text-xl font-medium">Default Address</h2>
+      <div class="border border-gray-250 shadow-sm row  gap-3">
+           <input type="radio" id="home" name="address" checked class="text-primary-500  mt-4 ml-4 self-start ">
+           <div class="stack gap-2 my-4 w-full">
+            <div class="row gap-2 ">
+           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+           <span class="w-13 h-7 bg-primary-500 text-white  text-[12px] justify-center flex items-center"> Home</span>
+           </div>
+           <p class="text-sm text-gray-550">6391 Elgin St. Celina, Delaware 10299</p>
+           <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(239) 555-0108</span></p>
+      </div>
+   
+        <button class=" self-center mr-4  h-10 w-10 border border-gray-250 text-gray-550 hover:text-primary-500 transition-colors flex items-center justify-center">
+            <i class="hgi hgi-stroke hgi-more-vertical text-2xl"></i>
+        </button>
+   
+        </div>
+        </div>
+
+         <div class="stack gap-4">
+      <h2 class="text-xl font-medium">Other Address</h2>
+      <div class="border border-gray-250 shadow-sm row  gap-3">
+           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <div class="stack gap-2 my-4 w-full">
+            
+           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+        
+           <p class="text-sm text-gray-550">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+           <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(603) 555-0123</span></p>
+      </div>
+   
+        <button class=" self-center mr-4  h-10 w-10 border border-gray-250 text-gray-550 hover:text-primary-500 transition-colors flex items-center justify-center">
+            <i class="hgi hgi-stroke hgi-more-vertical text-2xl"></i>
+        </button>
+   
+        </div>
+
+        <div class="border border-gray-250 shadow-sm row  gap-3">
+           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <div class="stack gap-2 my-4 w-full">
+            
+           <label for="address" class="text-[18px] tracking-[1px]">Alexa Willioms</label>
+        
+           <p class="text-sm text-gray-550">2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+           <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(629) 555-0129</span></p>
+      </div>
+   
+        <button class=" self-center mr-4  h-10 w-10 border border-gray-250 text-gray-550 hover:text-primary-500 transition-colors flex items-center justify-center">
+            <i class="hgi hgi-stroke hgi-more-vertical text-2xl"></i>
+        </button>
+   
+        </div>
+        <div class="border border-gray-250 shadow-sm row  gap-3">
+           <input type="radio" id="home" name="address"  class="text-primary-500  mt-4 ml-4 self-start ">
+           <div class="stack gap-2 my-4 w-full">
+            
+           <label for="address" class="text-[18px] tracking-[1px]">Wade Warren</label>
+        
+           <p class="text-sm text-gray-550">3891 Ranchview Dr. Richardson, California 62639</p>
+           <p class="flex gap-2">   <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i> <span class="text-sm">(270) 555-0117</span></p>
+      </div>
+   
+        <button class=" self-center mr-4  h-10 w-10 border border-gray-250 text-gray-550 hover:text-primary-500 transition-colors flex items-center justify-center">
+            <i class="hgi hgi-stroke hgi-more-vertical text-2xl"></i>
+        </button>
+   
+        </div>
+
+
+        </div>
+
+              <button class=" border border-primary-500  text-sm text-primary-500 uppercase h-14 w-64 row justify-center gap-2.5 cursor-pointer">
+                <i class="hgi hgi-stroke hgi-add-01 text-xl"></i>
+        ADD NEW ADDRESS
+      </button>
+    </div>
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+        <p class="text-sm text-body">This is some placeholder content the <strong class="font-medium text-heading">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-base bg-neutral-secondary-soft" id="review" role="tabpanel" aria-labelledby="review-tab">
+        <p class="text-sm text-body">This is some placeholder content the <strong class="font-medium text-heading">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+  
+</div>
+</div>
+<!--Order Summary-->
+<div class="border border-gray-250 mt-8 p-6 h-fit">
+              <div class="flex justify-between border-b border-b-gray-250 pb-4"> 
+                <span > Subtotal</span>
+                <span>$360.00</span>
+              </div>
+
+              
+
+                <div class="flex justify-between  py-4"> 
+                <span > Taxes</span>
+                <span>$25.00</span>
+              </div>
+              <div class="flex justify-between border-b border-b-gray-250 pb-4"> 
+                <span > Delivery Fee</span>
+                <span class="text-[#16A34A]">FREE</span>
+              </div>
+              <div class="flex justify-between  py-4"> 
+              <h3 class="text-xl font-medium">  Grand Total </h3>
+              <span class="text-xl font-medium">$385.00</span>
+              </div>
+             
+              <button class="bg-primary-500 text-white h-12 w-full cursor-pointer  "> CHECKOUT</button>
+          </div><!--Order Summary-->
+    </div>
+  
+          
+     </div>
+    
+  </section>
+
+
+
+
+</main>
+
+
+
+
+
+<!-- ----- FOOTER ----- -->
+  <footer>
+    
+      
+      <!-- ------Contact + Newsletter------ -->
+      <div class="py-8 border-y border-y-gray-250 ">
+     
+         <!--  Footer Navigation -->
+      <div class=" pb-8 text-base text-dark-primary   ">
+       <div class="container mx-auto px-8   ">
+        <div class= " grid grid-cols-1 gap-8 place-items-center  lg:row justify-between">
+        <ul class="  flex flex-wrap  justify-center   gap-6 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> about us</a></li>
+          <li> <a href=""> CONTACT US</a></li>
+
+        </ul>
+
+        <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+
+        <ul class="  row gap-6 uppercase ">
+          <li> <a href=""> TERMS & CONDITIONS</a></li>
+          <li> <a href=""> PRIVACY POLICY</a></li>
+        </ul>
+          </div>
+      </div>
+     </div>
+      <div class=" py-4  bg-primary-500 text-white ">
+        <div class="container mx-auto px-8 ">
+           <!-- Copyright  -->
+          <div class=" stack gap-4 place-items-center md:row justify-between">
+        <p>Copyright © 2025 PearlGem. All Rights Reserved.</p>
+         <!-- Payment methods -->
+        <ul class="  row gap-4 uppercase ">
+          <li> <img src="./assest/img/footer/klarna.png" alt="klarna"></li>
+          <li> <img src="./assest/img/footer/Visa.png" alt="Visa"></li>
+          <li> <img src="./assest/img/footer/PayPal.png" alt="PayPal"></li>
+          <li> <img src="./assest/img/footer/Amex.png" alt="Amex"></li>
+          <li> <img src="./assest/img/footer/Discover.png" alt="Discover"></li>
+          <li> <img src="./assest/img/footer/Mastercard.png" alt="Mastercard"></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
