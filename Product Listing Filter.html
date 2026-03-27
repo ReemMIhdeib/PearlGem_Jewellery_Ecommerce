@@ -33,8 +33,8 @@
 <body class="font-family-primary bg-white text-dark-primary">
 
   <!-- -----header----- -->
-  <header class=" text-center  ">
-
+  <header class=" text-center sticky top-0 z-50 bg-white w-full  ">
+<div clas="">
     <div class="container mx-auto px-8 ">
       <!-- Hidden on mobile, visible on lg for desktop  -->
       <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-2 ">
@@ -62,9 +62,9 @@
       </div>
    <!-- ----- Main Header ----- -->
       <div class="flex justify-between items-center py-6">
-        <div class="row  justify-center gap-2 sm:gap-4">
+        <div class="row  justify-end items-start gap-1 sm:gap-4">
           <!-- visible on  mobile , lg Hidden on  for desktop -->
-          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[30px]  color-icon lg:hidden"></i>
+          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[27px] sm:text-3xl  color-icon lg:hidden"></i>
           <!--scale-x-[-1]" Horizontal flip "-->
              <!--logo-->
          <a href="index.html"> <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem"></a>
@@ -80,15 +80,15 @@
 
         </ul>
         </nav>
-        <ul class="  row justify-between gap-1 sm:gap-6">
+        <ul class="  row justify-between gap-0.75 sm:gap-6">
           <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
           <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
-          <li class="hidden lg:block"><a href=""><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
-          <li> <a href=""> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
+          <li class=""><a href="login.html"><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
+          <li> <a href="My Cart.html"> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
         </ul>
       </div>
     </div>
-
+</div>
 
   </header>
 
@@ -102,75 +102,74 @@
             <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
             <a href="ProductListing.html" class="tracking-[.5px] cursor-pointer "> Shop</a>
             </div>
+
+            
             <div class=" lg:grid grid-cols-[1fr_4fr] gap-12 items-start">
             <!-- FILTER-->
-            <div class=" filter hidden lg:stack gap-8 " >
-                <!-- Categories-->
-                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
-                    <div class="row justify-between "> <!-- title-->
-                    <h3 class="text-[18px] font-bold tracking-[.35px]">
-                        Categories
-                    </h3>
-                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
-                    </div>
-                    <ul class="stack gap-4 ">
-                   <li>
-                    <label for="EngagementRings" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
-                    <input type="checkbox" id="EngagementRings" name="Engagement Rings">
-                    <span >Engagement Rings</span>
-                    </div>
-                    <span  class="text-gray-550">(120)</span>
-                  </label>
-                  </li>
-                  <li>
-                     <label for="Rings" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
-                    <input type="checkbox" id="Rings" name="Rings">
-                    <span >Rings</span>
-                    </div>
-                    <span class="text-gray-550">(240)</span>
-                  </label>
-                  </li>
-                  <li>
-                    <label for="Necklaces" class=" row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
-                    <input type="checkbox" id="Necklaces" name="Necklaces">
-                    <span >Necklaces</span>
-                    </div>
-                    <span class="text-gray-550">(175)</span>
-                    </label>
-                  </li>
-                  <li >
-                    <label for="Bracelets" class="row justify-between text-base cursor-pointer">
-                    <div class="row gap-2">
-                    <input type="checkbox" id="Bracelets" name="Bracelets">
-                    <span >Bracelets</span>
-                    </div>
-                    <span class="text-gray-550">(120)</span>
-                    </label>
-                  </li>
-                   <li>
-                   <label  for="Earrings" class="row justify-between text-base cursor-pointer pb-4">
-                    <div class="row gap-2">
-                    <input type="checkbox" id="Earrings" name="Earrings">
-                    <span>Earrings</span>
-                    </div>
-                    <span class="text-gray-550">(90)</span>
-                   </label>
-                  </li>
+             
+            <div id="accordion-color" data-accordion="collapse" class="filter overflow-hidden stack gap-6">
+  <h3 id="accordion-color-heading-1">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+      <span  class="text-[18px] font-bold tracking-[.35px] ">Categories</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h3>
+  <div id="accordion-color-body-1" class=" border-b border-b-gray-250" aria-labelledby="accordion-color-heading-1">
+    <ul class="stack gap-4 pb-4">
+    <li class="flex gap-2  items-center w-full">
+       <input type="checkbox" id="EngagementRings" name="Engagement Rings">
+      <label for="EngagementRings" class="flex justify-between cursor-pointer text-base w-full">
+        <span>Engagement Rings</span>
+          <span class="text-gray-550">(120)</span>
+        
+      </label>
+   
+    </li>
+    <li class="flex gap-2 items-center w-full">
+      <input type="checkbox" id="Rings" name="Rings">
+      <label for="Rings" class="flex justify-between cursor-pointer text-base w-full">
+        
+        <span>Rings</span>
+      </label>
+      <span class="text-gray-550">(240)</span>
+    </li>
+    <li class="flex gap-2 items-center w-full">
+      <input type="checkbox" id="Necklaces" name="Necklaces">
+      <label for="Necklaces" class="flex justify-between cursor-pointer text-base w-full">
+        
+        <span>Necklaces</span>
+        <span class="text-gray-550">(175)</span>
+      </label>
+      
+    </li>
+    <li class="flex gap-2 items-center w-full">
+       <input type="checkbox" id="Bracelets" name="Bracelets">
+      <label for="Bracelets" class="flex justify-between cursor-pointer text-base w-full">
+       
+        <span>Bracelets</span>
+         <span class="text-gray-550">(120)</span>
+      </label>
+     
+    </li>
+    <li class="flex gap-2 items-center w-full">
+      <input type="checkbox" id="Earrings" name="Earrings">
+      <label for="Earrings" class="flex justify-between cursor-pointer text-base w-full">
+        
+        <span>Earrings</span>
+              <span class="text-gray-550">(90)</span>
+      </label>
 
-                  </ul>
-                </div>
-                 <!--Ring by Diamond-->
-                <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
-                    <div class="row justify-between "> <!-- title-->
-                    <h3 class="text-[18px] font-bold tracking-[.35px]">
-                        Ring by Diamond
-                    </h3>
-                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
-                    </div>
-                    <ul class="stack gap-4 pb-4">
+    </li>
+  </ul>
+  </div>
+   <h3 id="accordion-color-heading-2">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="true" aria-controls="accordion-color-body-2">
+      <span  class="text-[18px] font-bold tracking-[.35px] ">Ring by Diamond</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h3>
+  <div id="accordion-color-body-2" class=" border-b border-b-gray-250" aria-labelledby="accordion-color-heading-2">
+     <ul class="stack gap-4 pb-4">
                   <li  class="flex justify-between items-center  w-full">
                     <input type="checkbox" id="Round" name="Round" class="hidden">
                     <label for="Round" class="flex  gap-2 cursor-pointer text-base w-full">
@@ -239,31 +238,28 @@
                   </li>
              
                   </ul>
-                </div>
-                <!--price-->
-                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
-                    <div class="row justify-between "> <!-- title-->
-                    <h3 class="text-[18px] font-bold tracking-[.35px]">
-                       Price Range
-                    </h3>
-                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
-                    </div>
-                    
-                    <div>
+  </div>
+   <h3 id="accordion-color-heading-3">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="true" aria-controls="accordion-color-body-3">
+      <span  class="text-[18px] font-bold tracking-[.35px] ">Price Range</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h3>
+  <div id="accordion-color-body-3" class=" border-b border-b-gray-250" aria-labelledby="accordion-color-heading-3">
+    <div>
                       
                         <label for="default-range" class="block mb-2.5 text-base font-medium text-heading">Price: $0 - $2000</label>
                         <input id="default-range" type="range" min="0" max="2000" value="500" class="w-full h-2 accent-primary-500 rounded-full  cursor-pointer">
                     </div>
-                 </div>  
-                 <!-- Size-->
-                 <div class="stack gap-4  w-full border-b-2 border-gray-250 ">
-                    <div class="row justify-between "> <!-- title-->
-                    <h3 class="text-[18px] font-bold tracking-[.35px]">
-                        Size
-                    </h3>
-                    <button> <i class="hgi hgi-stroke hgi-arrow-up-01"></i></button>
-                    </div>
-                    <ul class="stack gap-4 pb-4">
+  </div>
+    <h2 id="accordion-color-heading-4">
+    <button type="button" class="flex items-center justify-between w-full  hover:text-fg-brand hover:bg-brand-softer gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="true" aria-controls="accordion-color-body-4">
+      <span class="text-[18px] font-bold tracking-[.35px] ">Size</span>
+      <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+    </button>
+  </h2>
+  <div id="accordion-color-body-4" class=" border-b border-b-gray-250" aria-labelledby="accordion-color-heading-4">
+    <ul class="stack gap-4 pb-4">
                    <li  class="flex justify-between items-center  w-full">
                     <label for="size-4-0" class="flex  gap-2 cursor-pointer text-base w-full">
                    
@@ -339,9 +335,12 @@
                   
                   </li>
                   </ul>
-                </div>
-                 
-            </div>
+  </div>
+  
+
+              </div>
+                
+          <!--products-->
             <div class="stack gap-12">
              <div class="stack gap-6">
               <div class=" stack gap-4 md:row justify-between">
@@ -373,13 +372,13 @@
                 <!--Product Card-->
                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   <img src="./assest/img/product/gold-earrings-with-reflection-white-background (1).svg" alt="Gold Prestige Intertwined Earrings" class="place-self-center">
                  </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                  <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Gold Prestige Intertwined Earrings </h3>
                   </a>
                
@@ -424,13 +423,13 @@
 
                    <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   <img src="./assest/img/product/Rose Gold Diamond Ring.svg " alt="Rose Gold Diamond Ring " class="place-self-center pt-8">
                  </a>
        
                 <div class="stack gap-6 xs:justify-between ">
                    <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Rose Gold Diamond Ring</h3>
                   </a>
                
@@ -473,7 +472,7 @@
 <!--Product Card-->
                   <div class="product grid  grid-row-2 xs:grid-cols-2 lg:grid-cols-[1fr_2fr]  gap-4">
              
-                 <a href="" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
+                 <a href="Product Details.html" class="xs:h-70 md:h-80  bg-gray-150 flex justify-center items-center ">
                   
                   <img src="./assest/img/product/silver-gilded-earrings-with-zircon-white-background 1.svg" alt="Gold Pigeon Blood Earrings" class="place-self-center">
                 
@@ -481,7 +480,7 @@
        
                 <div class="stack gap-6 xs:justify-between ">
                <div>
-                  <a href="">
+                  <a href="Product Details.html">
                     <h3 class="text-base  text-dark-primary "> Gold Pigeon Blood Earrings </h3>
                   </a>
                 

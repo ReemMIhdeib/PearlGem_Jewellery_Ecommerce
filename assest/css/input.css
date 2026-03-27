@@ -55,22 +55,15 @@
         font-size: 24px;
     }
 
+    button{
+        cursor: pointer;
+    }
     
-    
-}
-.imgg  a img{
-    height: 300px;
-    
-}
-.imggg  a img{
-    height: 200px;
     
 }
 
-.imgg:hover .hoveer{
-   
-    display: grid;
-}
+
+
 
 @utility ttt{
 height: 288px;
