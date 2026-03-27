@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap" rel="stylesheet">
+  <!--icon-->
+  <!--fontawson-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--hugeicons-->
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+ 
+
+  <!--lab-->
+ <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <!--css-->
+  <link rel="stylesheet" href=".\assest\css\output.css">
+  
+  <!--npm run build:css-->
+
+  <title>Login </title>
+</head>
+
+<body class="font-family-primary bg-white text-dark-primary">
+
+<!-- -----header----- -->
+  <header class=" text-center sticky top-0 z-50 bg-white w-full  ">
+<div clas="">
+    <div class="container mx-auto px-8 ">
+      <!-- Hidden on mobile, visible on lg for desktop  -->
+      <div class=" hidden lg:row justify-between  border-b border-dashed border-gray-250 py-2 ">
+        <div class=" row gap-2">
+          <i class="hgi hgi-stroke hgi-calling-02 color-icon"></i>
+          <p class="text-base  text-gray-750"> (307) 555-0133</p>
+        </div>
+
+
+        <p class="text-dark-primary">Get 50% OFF on Engagement Rings</p>
+
+
+        <div class="row gap-4">
+          <div class="row gap-1">
+            <p>EN</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+          <div class="row gap-1">
+            <p>USD</p>
+            <i class="hgi hgi-stroke hgi-arrow-down-01 color-icon"></i>
+
+          </div>
+        </div>
+      </div>
+   <!-- ----- Main Header ----- -->
+      <div class="flex justify-between items-center py-6">
+        <div class="row  justify-end items-start gap-1 sm:gap-4">
+          <!-- visible on  mobile , lg Hidden on  for desktop -->
+          <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[27px] sm:text-3xl  color-icon lg:hidden"></i>
+          <!--scale-x-[-1]" Horizontal flip "-->
+             <!--logo-->
+         <a href="index.html" class="logo"> <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem"></a>
+        </div>
+      <!-- Hidden on mobile, visible on lg   -->
+       <nav>
+        <ul class=" hidden lg:row gap-8 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> EARRINGS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> PENDENTS</a></li>
+          <li> <a href=""> NECKLACES</a></li>
+
+        </ul>
+        </nav>
+        <ul class="  row justify-between gap-0.75 sm:gap-6">
+          <li> <a href=""> <i class="hgi hgi-stroke hgi-search-01 color-icon"></i></a></li>
+          <li class="hidden lg:block"> <a href=""> <i class="hgi hgi-stroke hgi-favourite color-icon"></i></a></li>
+          <li class=""><a href="login.html"><i class="hgi hgi-stroke hgi-user-circle color-icon  "></i></a></li>
+          <li> <a href="My Cart.html"> <i class="hgi hgi-stroke hgi-shopping-cart-02  color-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+  </header>
+
+<main>
+    <section class="hero  pb-20 pt-2.5  text-white">
+       <div class="container mx-auto px-8">
+        <div class="relative ">
+        <div  class="h-screen bg-center w-full bg-no-repeat bg-cover bg-[url(./../img/home/young-woman-wearing-elegant-pearl-jewelry-grey-background-closeup1.png)] ">
+        <div>
+          <div class=" absolute bottom-[5%] ml-16  stack  items-start gap-10 ">
+          <div >
+            <h1 class=" hidden lg:stack">Unveiling the Beauty <span >
+              of Fine Jewelry </span> </h1>
+               <h1 class=" text-4xl sm:text-5xl lg:hidden">Unveiling the 
+                <span> Beauty of  </span>
+                <span >
+               Fine Jewelry </span> </h1>
+              <p  >Handpicked gemstones and intricate designs for a lifetime of luxury.</p>
+            </div>
+            <a href="ProductListing.html" class="border-0 border-b-2  "> SHOP NOW <span class="px-2">    <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i> </span></a>
+          </div>
+     
+       
+   
+          <div class=" hidden lg:block absolute top-[49%]  right-[24%] ">
+                  <button class=" w-56 h-56   opacity-160 border bg-[#C4A88F/160]  border-gray-250 rounded-full  ">
+             
+            </button>
+          </div>
+
+          <div class=" absolute top-[50%] bottom-[50%] right-[5%] ml-16  hidden lg:stack  items-start gap-10 ">
+       
+            <div>
+            <h2 class="text-3xl border-b pb-4">New Bracelets</h2>
+            <p class="stack text-base pt-4">Discover handcrafted
+              <span> bracelets that complement </span>
+              your unique charm.</p>
+          </div>
+          </div>
+               <div class=" absolute bottom-[5%] right-[5%] ml-16  hidden lg:row   gap-4 ">
+
+            <button class=" w-12 h-12 border border-white rounded-full hover:bg-primary-500 hover:text-white">
+              <i class="hgi hgi-stroke hgi-arrow-left-02"></i>
+            </button>
+             <button class=" w-12 h-12 border border-white rounded-full hover:bg-primary-500 hover:text-white">
+             <i class="hgi hgi-stroke hgi-arrow-right-02"></i>
+            </button>
+          
+          </div>
+          </div>
+
+          
+
+<div class="w-full max-w-sm bg-primary-50 text-dark-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 border border-primary-100 rounded-base shadow-xs">
+    <form action="#"  onsubmit="window.location.href='index.html'; return false;">
+        
+        <h2 class="text-3xl font-semibold text-heading mb-2">Create New Account</h2>
+        <p class="mb-6 text-sm">Please Enter Details</p>
+        
+        <div class="mb-4">
+            <label for="Name" class="block mb-1 text-sm font-medium text-heading" >Name</label>
+            <input type="text" placeholder="Alexa Willioms" id="Name" class="text-dark-primary bg-neutral-secondary-medium border border-gray-250 text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs " required />
+        </div>
+         <div class="mb-4">
+            <label for="email" class="block mb-1 text-sm font-medium text-heading" >Email Address</label>
+            <input type="email" placeholder="alexa.willioms@example.com" id="email" class="text-dark-primary bg-neutral-secondary-medium border border-gray-250 text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs " required />
+        </div>
+        <div>
+            <label for="password" class="block mb-1 text-sm font-medium text-heading">Your password</label>
+            <input type="password" id="password" class="bg-neutral-secondary-medium border border-gray-250  text-dark-primary text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
+        </div>
+        
+       
+            <div class="flex items-center ms-2 pt-1 py-5">
+                <input id="checkbox-remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium text-primary-500 rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft">
+                <label for="checkbox-remember" class="ms-2 text-sm w-full font-sans">I Agree The Terms & Conditions</label>
+            </div>
+            
+        
+
+        <div class="grid grid-rows-2 gap-4 w-full">
+            
+               
+              <button type="submit" class="bg-primary-500 text-white h-12 w-full flex items-center  justify-center cursor-pointer text-base "> REGISTER</button>
+        
+              <a href="login.html" class="border border-primary-500  h-12 w-full flex items-center  justify-center cursor-pointer  text-base text-primary-500 "> LOGIN</a>
+            
+            </div>
+        
+    </form>
+</div>
+
+        </div>
+        </div>
+
+       </div>
+    </section>
+</main>
+
+  <!-- ----- FOOT
+ ER ----- -->
+  <footer>
+    
+      <div class=" py-12 text-white bg-primary-500 ">
+        <!-- Grid → 1 col mobile / 2 md / row lg -->
+       <div class="container mx-auto px-8 grid grid-cols-1 gap-5 md:grid-cols-2  lg:grid-cols-4  lg:row justify-between  ">
+        <div class="row justify-center  gap-4 ">
+
+          <i class="hgi hgi-stroke hgi-delivery-box-01 text-white"></i>
+          <div>
+            <h3 class="font-medium">
+              Free Shipping
+            </h3>
+            <p class="text-sm font-light">
+              You will love at great low prices
+            </p>
+          </div>
+        </div>
+        <div class="row justify-center  gap-4 ">
+          <i class="hgi hgi-stroke hgi-delivery-return-01"></i>
+          <div>
+            <h3 class="font-medium">
+              15 Days Returns
+            </h3>
+            <p class="text-sm font-light">
+              Within 15 days for an exchange
+            </p>
+          </div>
+        </div>
+        <div class=" row justify-center gap-4 ">
+
+          <i class="hgi hgi-stroke hgi-time-03"></i>
+       
+          <div>
+            <h3 class="font-medium">
+              Customer Support
+            </h3>
+            <p class="text-sm font-light">
+              24 hours a day, 7 days a week
+            </p>
+          </div>
+        </div>
+        <div class="row justify-center gap-4  ">
+          <i class="hgi hgi-stroke hgi-master-card"></i>
+          <div>
+            <h3 class="font-medium">
+              Flexible Payment
+
+            </h3>
+            <p class="text-sm font-light">
+              Pay with multiple credit cards
+            </p>
+          </div>
+        </div>
+      </div>
+     </div>
+      <!-- ------Contact + Newsletter------ -->
+      <div class="py-10 border-b border-b-gray-250 ">
+        <div class="container mx-auto px-8 stack gap-5 place-items-center lg:row lg:justify-between  ">
+         <!-- Contact-->
+          <div class="stack gap-2 ">
+          <h4 class="text-lg text-dark-primary">
+            CONTACT US
+          </h4>
+          <p class="text-gray-550 font-light"> (405) 555-0128 </p>
+        </div>
+         <!-- Newsletter -->
+        <div class="stack gap-10  border-y   py-8 border-y-gray-250 lg:border-y-0 lg:border-x border-x-gray-250 lg:px-8 ">
+        <div class="stack gap-2">
+          <h2 class="   text-3xl md:text-4xl  ">
+            Let’s Get In Touch!
+          </h2>
+          <p class="text-base text-gray-550"> What' s inside? Exclusive sales, new arrivals & much more.</p>
+          </div>
+          <div>
+            <Form class="flex gap-0 items-stretch  ">
+                  <!-- items-stretch → يخلي input + button نفس الارتفاع -->
+              <input type="email" placeholder="   Email Address" class="  border border-gray-250 xs:pr-13 md:pr-24">
+            
+              <button class="text-sm  border border-gray-250 text-white bg-primary-500   py-3 px-6 ">
+                SIGN UP
+              </button>
+       
+
+            </Form>
+           
+          </div>
+        </div>
+        <!---- SOCIAL ---->
+        <div class="stack gap-2">
+          <h4 class=" text-lg text-dark-primary">
+            SOCIAL NETWORKS
+          </h4>
+          <nav>
+          <ul class="row justify-between  gap-6">
+               <li><a href=""> <i class=" fa-brands fa-facebook"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href=""> <i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+          </nav>
+        </div>
+        </div>
+        </div>
+         <!--  Footer Navigation -->
+      <div class=" py-8 text-base text-dark-primary   ">
+       <div class="container mx-auto px-8   ">
+        <div class= " grid grid-cols-1 gap-8 place-items-center  lg:row justify-between">
+        <ul class="  flex flex-wrap  justify-center   gap-6 uppercase ">
+          <li> <a href=""> RINgS</a></li>
+          <li> <a href=""> BRACELETS</a></li>
+          <li> <a href=""> about us</a></li>
+          <li> <a href=""> CONTACT US</a></li>
+
+        </ul>
+
+        <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem">
+
+        <ul class="  row gap-6 uppercase ">
+          <li> <a href=""> TERMS & CONDITIONS</a></li>
+          <li> <a href=""> PRIVACY POLICY</a></li>
+        </ul>
+          </div>
+      </div>
+     </div>
+      <div class=" py-4  bg-primary-500 text-white ">
+        <div class="container mx-auto px-8 ">
+           <!-- Copyright  -->
+          <div class=" stack gap-4 place-items-center md:row justify-between">
+        <p>Copyright © 2025 PearlGem. All Rights Reserved.</p>
+         <!-- Payment methods -->
+        <ul class="  row gap-4 uppercase ">
+          <li> <img src="./assest/img/footer/klarna.png" alt="klarna"></li>
+          <li> <img src="./assest/img/footer/Visa.png" alt="Visa"></li>
+          <li> <img src="./assest/img/footer/PayPal.png" alt="PayPal"></li>
+          <li> <img src="./assest/img/footer/Amex.png" alt="Amex"></li>
+          <li> <img src="./assest/img/footer/Discover.png" alt="Discover"></li>
+          <li> <img src="./assest/img/footer/Mastercard.png" alt="Mastercard"></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

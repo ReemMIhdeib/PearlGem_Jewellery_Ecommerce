@@ -66,7 +66,7 @@
           <i class="hgi hgi-stroke hgi-menu-03 scale-x-[-1] text-[27px] sm:text-3xl  color-icon lg:hidden"></i>
           <!--scale-x-[-1]" Horizontal flip "-->
              <!--logo-->
-         <a href="index.html"> <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem"></a>
+         <a href="index.html" class="logo"> <img src="./assest/img/public/Logo Text.svg" alt="Logo PearlGem"></a>
         </div>
       <!-- Hidden on mobile, visible on lg   -->
        <nav>
@@ -142,7 +142,10 @@
           
 
 <div class="w-full max-w-sm bg-primary-50 text-dark-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 border border-primary-100 rounded-base shadow-xs">
-    <form action="#">
+    <form action="#" onsubmit="window.location.href='index.html'; return false;">
+ 
+ 
+
         
         <h2 class="text-3xl font-semibold text-heading mb-2">Welcome</h2>
         <p class="mb-6 text-sm">Please login here</p>
@@ -159,7 +162,10 @@
         <div class="grid grid-rows-2 gap-2 w-full xs:grid-cols-2 xs:grid-rows-1 py-1 xs:pb-5">
             <div class="flex items-center ms-2">
                 <input id="checkbox-remember" type="checkbox" value="" class="w-4 h-4 border border-default-medium text-primary-500 rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft">
-                <label for="checkbox-remember" class="ms-2 text-sm font-medium">Remember me</label>
+                <label for="checkbox-remember" class="ms-2 text-sm font-medium">
+                    Remember me
+
+                </label>
             </div>
             <a href="#" class="ms-auto text-sm xsfont-medium text-primary-500 hover:underline">Forgot Password?</a>
             
@@ -168,21 +174,22 @@
 
         <div class="grid grid-rows-2 gap-4 w-full">
             
-             
-              <a href="index.html" class="border border-primary-500  h-12 w-full flex items-center  justify-center cursor-pointer  text-base text-primary-500 "> LOGIN</a>
+              <button type="submit" class="bg-primary-500 text-white h-12 w-full flex items-center  justify-center cursor-pointer text-base "> LOGIN</button>
+       
+              <a href="Register.html" class="border border-primary-500  h-12 w-full flex items-center  justify-center cursor-pointer  text-base text-primary-500 "> REGISTER</a>
               
-              <a href="Register.html" class="bg-primary-500 text-white h-12 w-full flex items-center  justify-center cursor-pointer text-base "> REGISTER</a>
-        </div>
-        
+          
+            </div>
+
     </form>
 </div>
 
         </div>
         </div>
 
-       </div>
+       
     </section>
-
+</main>
   <!-- ----- FOOT
  ER ----- -->
   <footer>

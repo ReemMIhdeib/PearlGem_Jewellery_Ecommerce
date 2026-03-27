@@ -58,8 +58,16 @@
     button{
         cursor: pointer;
     }
-    
-    
+    button:hover {
+  box-shadow: 0 0 8px #C37076; /* shadow-primary-500 */
+}
+       a:hover {
+  box-shadow: 0px 2px 8px #E5BCBD; 
+}
+a.logo:hover 
+{
+      box-shadow: none !important;
+}
 }
 
 
