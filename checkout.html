@@ -152,7 +152,7 @@
     </ul>
 </div>
 <div id="default-tab-content ">
-
+    <!--address-->
     <div class="hidden p-4  rounded-base stack gap-8 " id="address" role="tabpanel" aria-labelledby="address-tab">
            <div class="grid  grid-rows-2 lg:grid-rows-1 lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
             <div class="stack gap-8" >
@@ -262,6 +262,7 @@
    </div>
       </div>
     </div>
+    <!--payment-->
     <div class="hidden p-4 stack gap-6 " id="payment" role="tabpanel" aria-labelledby="payment-tab">
 
       <div class="grid  grid-rows-2 lg:grid-rows-1 lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
@@ -275,7 +276,7 @@
            <input type="radio" id="Credit-card" name="payment-method"   class="text-primary-500 cursor-pointer self-start "> 
             <label for="Credit-card" class="w-full text-[18px] tracking-[1px] cursor-pointer"> Credit/Debit Card</label>
             </div>
-            <div class=" hidden gap-6 group-has-[input:checked]:stack ">
+            <div class=" hidden gap-6 group-has-[:checked#Credit-card]:stack ">
               <ul class="grid grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-4"> 
                 
               <li class="stack ">
@@ -341,6 +342,7 @@
             </div>
     </div>
     </div>
+    <!--review-->
     <div class="hidden p-4 stack gap-6" id="review" role="tabpanel" aria-labelledby="review-tab">
       <div class="grid  grid-rows-2  lg:grid-rows-1 lg:grid-cols-[2fr_1fr]   md:gap-8 lg:gap-16">
        <div class="stack gap-8" >
